@@ -1,0 +1,1941 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>集芳阁云搜 - 官方品牌站|高清内容生态门户</title>
+<meta name="description" content="集芳阁云搜官方网站，聚合原创影像与精品内容，深耕云搜索与视频品牌社区，为企业与创作者搭建值得信赖的高品质内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b4d3e'/%3E%3Ccircle cx='28' cy='28' r='13' fill='none' stroke='%23f3c969' stroke-width='4'/%3E%3Cline x1='38' y1='38' x2='52' y2='52' stroke='%23f3c969' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --jfy-deep:#12332a;
+  --jfy-ink:#16352c;
+  --jfy-green:#1b4d3e;
+  --jfy-green-soft:#2c6b57;
+  --jfy-moss:#6f9a7f;
+  --jfy-sand:#efe6d3;
+  --jfy-cream:#f7f2e7;
+  --jfy-gold:#c8992e;
+  --jfy-gold-light:#f3c969;
+  --jfy-ink-soft:#4a5d54;
+  --jfy-line:rgba(27,77,62,.16);
+  --jfy-white:#fffdf8;
+  --jfy-shadow:0 14px 34px rgba(18,51,42,.12);
+  --jfy-radius:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:150px}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  background:var(--jfy-cream);
+  color:var(--jfy-ink);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+h1,h2,h3,h4{line-height:1.35;font-weight:800;letter-spacing:.2px}
+.jfy-container{width:min(1200px,92%);margin-inline:auto}
+
+/* ===== 顶部吸顶区：公告条 + 页头 ===== */
+.jfy-sticky-top{position:sticky;top:0;z-index:90}
+.jfy-announce{
+  background:linear-gradient(90deg,var(--jfy-deep),var(--jfy-green) 62%,var(--jfy-green-soft));
+  color:#f4ecd8;
+  font-size:13.5px;
+  letter-spacing:.4px;
+}
+.jfy-announce-inner{
+  display:flex;align-items:center;gap:14px;
+  padding:8px 0;flex-wrap:wrap;
+}
+.jfy-announce-tag{
+  background:var(--jfy-gold-light);color:var(--jfy-deep);
+  font-weight:800;border-radius:999px;padding:1px 12px;font-size:12px;flex:none;
+}
+.jfy-announce-ticker{overflow:hidden;flex:1;min-width:0}
+.jfy-announce-list{display:flex;gap:38px;white-space:nowrap;animation:jfy-ticker 26s linear infinite}
+.jfy-announce-list span{opacity:.94}
+.jfy-announce-list span b{color:var(--jfy-gold-light);font-weight:700}
+@keyframes jfy-ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+.jfy-header{
+  background:rgba(255,253,248,.94);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--jfy-line);
+  box-shadow:0 6px 18px rgba(18,51,42,.05);
+}
+.jfy-nav-wrap{display:flex;align-items:center;gap:22px;padding:12px 0}
+.jfy-brand{display:flex;align-items:center;gap:11px;flex:none}
+.jfy-brand-mark{
+  width:44px;height:44px;border-radius:13px;flex:none;
+  background:radial-gradient(circle at 32% 28%,#2f7a61,#12332a);
+  display:grid;place-items:center;color:var(--jfy-gold-light);font-size:20px;font-weight:900;
+  box-shadow:inset 0 0 0 2px rgba(243,201,105,.45);
+}
+.jfy-brand-text strong{display:block;font-size:18px;letter-spacing:1px;color:var(--jfy-deep)}
+.jfy-brand-text em{display:block;font-style:normal;font-size:11.5px;color:var(--jfy-moss);letter-spacing:2.4px}
+.jfy-menu{display:flex;gap:4px;margin-left:8px;flex:1;flex-wrap:wrap}
+.jfy-menu a{
+  padding:8px 13px;border-radius:10px;font-size:14.6px;font-weight:600;color:var(--jfy-ink-soft);
+  transition:.22s;
+}
+.jfy-menu a:hover,.jfy-menu a.jfy-active{background:rgba(27,77,62,.09);color:var(--jfy-green)}
+.jfy-nav-tools{display:flex;align-items:center;gap:10px;flex:none}
+.jfy-search{position:relative;display:flex;align-items:center}
+.jfy-search input{
+  width:210px;border:1px solid var(--jfy-line);border-radius:999px;
+  padding:9px 40px 9px 16px;font-size:13.6px;background:#fff;color:var(--jfy-ink);outline:none;transition:.22s;
+}
+.jfy-search input:focus{border-color:var(--jfy-green-soft);box-shadow:0 0 0 3px rgba(44,107,87,.14);width:236px}
+.jfy-search-btn{
+  position:absolute;right:6px;width:29px;height:29px;border-radius:50%;
+  background:var(--jfy-green);color:#fff;display:grid;place-items:center;font-size:13px;
+}
+.jfy-search-tip{
+  position:absolute;top:calc(100% + 8px);left:0;right:0;background:#fff;border:1px solid var(--jfy-line);
+  border-radius:12px;padding:10px 14px;font-size:13px;color:var(--jfy-ink-soft);box-shadow:var(--jfy-shadow);
+  display:none;
+}
+.jfy-search-tip.jfy-show{display:block}
+.jfy-search-tip b{color:var(--jfy-green)}
+.jfy-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:7px;
+  padding:10px 20px;border-radius:999px;font-size:14.4px;font-weight:700;transition:.22s;
+}
+.jfy-btn-primary{background:linear-gradient(120deg,var(--jfy-green),var(--jfy-green-soft));color:#fff;box-shadow:0 8px 20px rgba(27,77,62,.24)}
+.jfy-btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(27,77,62,.3)}
+.jfy-btn-gold{background:linear-gradient(120deg,var(--jfy-gold),var(--jfy-gold-light));color:#2a2003}
+.jfy-btn-gold:hover{transform:translateY(-2px)}
+.jfy-btn-ghost{border:1.5px solid var(--jfy-green);color:var(--jfy-green)}
+.jfy-btn-ghost:hover{background:var(--jfy-green);color:#fff}
+.jfy-burger{display:none;width:42px;height:42px;border-radius:11px;border:1px solid var(--jfy-line);color:var(--jfy-green);font-size:19px}
+
+/* ===== 首屏 ===== */
+.jfy-hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(1000px 460px at 88% -10%,rgba(243,201,105,.28),transparent 62%),
+    radial-gradient(760px 420px at -6% 24%,rgba(111,154,127,.34),transparent 60%),
+    linear-gradient(160deg,#fbf7ee,#eef2e6 52%,#e9efe3);
+}
+.jfy-hero-grid{
+  display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center;
+  padding:66px 0 74px;
+}
+.jfy-hero-kicker{
+  display:inline-flex;align-items:center;gap:9px;background:rgba(27,77,62,.1);
+  color:var(--jfy-green);border-radius:999px;padding:6px 16px;font-size:13px;font-weight:700;letter-spacing:.6px;
+}
+.jfy-hero-kicker::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--jfy-gold)}
+.jfy-hero h1{
+  font-size:clamp(38px,4.6vw,62px);
+  color:var(--jfy-deep);margin:18px 0 12px;letter-spacing:2px;
+}
+.jfy-hero h1 span{color:var(--jfy-green-soft);position:relative}
+.jfy-hero h1 span::after{
+  content:"";position:absolute;left:0;right:0;bottom:6px;height:11px;
+  background:rgba(243,201,105,.55);z-index:-1;border-radius:4px;
+}
+.jfy-hero-slogan{font-size:20px;font-weight:700;color:var(--jfy-green);letter-spacing:1px}
+.jfy-hero-desc{margin:16px 0 24px;color:var(--jfy-ink-soft);font-size:15.4px;max-width:56ch}
+.jfy-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:30px}
+.jfy-hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:470px}
+.jfy-hero-stat{
+  background:rgba(255,253,248,.86);border:1px solid var(--jfy-line);border-radius:15px;
+  padding:13px 15px;box-shadow:0 6px 16px rgba(18,51,42,.06);
+}
+.jfy-hero-stat b{display:block;font-size:25px;color:var(--jfy-green);letter-spacing:.5px}
+.jfy-hero-stat span{font-size:12.6px;color:var(--jfy-ink-soft)}
+
+.jfy-hero-visual{position:relative}
+.jfy-hero-cover{
+  border-radius:26px;overflow:hidden;position:relative;box-shadow:0 30px 60px rgba(18,51,42,.24);
+  border:5px solid rgba(255,253,248,.9);
+}
+.jfy-hero-cover svg{display:block;width:100%;height:auto}
+.jfy-hero-badge{
+  position:absolute;left:20px;bottom:20px;right:20px;
+  background:rgba(9,32,25,.72);backdrop-filter:blur(8px);color:#f5eedd;
+  border-radius:14px;padding:12px 16px;font-size:13.4px;display:flex;justify-content:space-between;gap:12px;align-items:center;
+}
+.jfy-hero-badge b{color:var(--jfy-gold-light)}
+.jfy-hero-float{
+  position:absolute;top:-16px;right:-10px;background:var(--jfy-white);border-radius:16px;
+  padding:10px 16px;box-shadow:var(--jfy-shadow);font-size:13px;font-weight:700;color:var(--jfy-green);
+  display:flex;align-items:center;gap:9px;border:1px solid var(--jfy-line);
+}
+.jfy-hero-float i{width:9px;height:9px;border-radius:50%;background:#37a06f;display:inline-block;animation:jfy-pulse 1.8s infinite}
+@keyframes jfy-pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.7)}}
+
+/* ===== 通用区块 ===== */
+.jfy-section{padding:72px 0}
+.jfy-section-alt{background:linear-gradient(180deg,#f2f4ea,#faf6ec)}
+.jfy-section-dark{background:radial-gradient(900px 380px at 80% 0%,#1f5a48,var(--jfy-deep));color:#e9e4d6}
+.jfy-head{display:flex;justify-content:space-between;align-items:flex-end;gap:26px;margin-bottom:36px;flex-wrap:wrap}
+.jfy-head-kicker{font-size:13px;font-weight:800;letter-spacing:3px;color:var(--jfy-gold);text-transform:uppercase}
+.jfy-head h2{font-size:clamp(25px,3vw,36px);color:var(--jfy-deep);margin-top:8px}
+.jfy-section-dark .jfy-head h2{color:#fffdf8}
+.jfy-head p{color:var(--jfy-ink-soft);font-size:14.6px;max-width:52ch;margin-top:8px}
+.jfy-section-dark .jfy-head p{color:#bcd3c7}
+
+/* 关键词解析长文 */
+.jfy-parse{display:grid;grid-template-columns:1fr 340px;gap:44px;align-items:start}
+.jfy-parse h3{font-size:20px;color:var(--jfy-green);margin:26px 0 10px}
+.jfy-parse h3:first-child{margin-top:0}
+.jfy-parse p{color:var(--jfy-ink-soft);font-size:15px;margin-bottom:12px;text-align:justify}
+.jfy-parse-side{position:sticky;top:160px;display:grid;gap:14px}
+.jfy-side-card{
+  background:var(--jfy-white);border:1px solid var(--jfy-line);border-radius:var(--jfy-radius);
+  padding:20px 20px;box-shadow:0 8px 22px rgba(18,51,42,.06);
+}
+.jfy-side-card h4{font-size:15.4px;color:var(--jfy-green);margin-bottom:10px}
+.jfy-side-card li{font-size:13.6px;color:var(--jfy-ink-soft);padding:6px 0 6px 16px;position:relative;border-bottom:1px dashed var(--jfy-line)}
+.jfy-side-card li:last-child{border-bottom:none}
+.jfy-side-card li::before{content:"›";position:absolute;left:2px;color:var(--jfy-gold);font-weight:800}
+
+/* 焦点视频 */
+.jfy-focus-grid{display:grid;grid-template-columns:1.42fr 1fr;gap:24px}
+.jfy-focus-main{
+  border-radius:22px;overflow:hidden;background:var(--jfy-white);border:1px solid var(--jfy-line);
+  box-shadow:var(--jfy-shadow);transition:.28s;display:flex;flex-direction:column;
+}
+.jfy-focus-main:hover{transform:translateY(-4px)}
+.jfy-cover{position:relative;aspect-ratio:16/9;overflow:hidden;background:#dde6da}
+.jfy-cover svg{width:100%;height:100%;display:block}
+.jfy-cover-tag{
+  position:absolute;top:12px;left:12px;background:rgba(18,51,42,.82);color:#f6efdd;
+  font-size:12px;font-weight:700;padding:3px 11px;border-radius:999px;letter-spacing:.5px;
+}
+.jfy-cover-play{
+  position:absolute;inset:0;display:grid;place-items:center;pointer-events:none;
+}
+.jfy-cover-play span{
+  width:52px;height:52px;border-radius:50%;background:rgba(255,253,248,.9);
+  display:grid;place-items:center;box-shadow:0 8px 20px rgba(0,0,0,.28);
+}
+.jfy-cover-play span::before{
+  content:"";border-style:solid;border-width:9px 0 9px 15px;border-color:transparent transparent transparent var(--jfy-green);
+  margin-left:4px;
+}
+.jfy-cover-dur{
+  position:absolute;right:12px;bottom:12px;background:rgba(9,26,21,.8);color:#fff;
+  font-size:12px;padding:2px 9px;border-radius:8px;letter-spacing:.5px;
+}
+.jfy-focus-main .jfy-focus-body{padding:20px 22px 22px}
+.jfy-focus-main h3{font-size:21px;color:var(--jfy-deep);margin-bottom:8px}
+.jfy-focus-main p{font-size:14.4px;color:var(--jfy-ink-soft)}
+.jfy-meta{display:flex;gap:14px;flex-wrap:wrap;font-size:12.8px;color:var(--jfy-moss);margin-top:12px;align-items:center}
+.jfy-meta b{color:var(--jfy-green)}
+.jfy-focus-side{display:grid;gap:16px}
+.jfy-mini{
+  display:grid;grid-template-columns:132px 1fr;gap:14px;background:var(--jfy-white);
+  border:1px solid var(--jfy-line);border-radius:16px;padding:12px;transition:.25s;align-items:center;
+}
+.jfy-mini:hover{transform:translateX(4px);border-color:var(--jfy-green-soft);box-shadow:0 10px 22px rgba(18,51,42,.1)}
+.jfy-mini .jfy-cover{border-radius:11px}
+.jfy-mini .jfy-cover-play span{width:34px;height:34px}
+.jfy-mini h4{font-size:14.8px;color:var(--jfy-deep);line-height:1.5;margin-bottom:5px}
+.jfy-mini small{font-size:12.4px;color:var(--jfy-moss)}
+
+/* 专题 */
+.jfy-special-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.jfy-special{
+  border-radius:20px;overflow:hidden;background:var(--jfy-white);border:1px solid var(--jfy-line);
+  box-shadow:0 8px 20px rgba(18,51,42,.06);transition:.26s;display:flex;flex-direction:column;
+}
+.jfy-special:hover{transform:translateY(-5px);box-shadow:0 16px 32px rgba(18,51,42,.14)}
+.jfy-special .jfy-cover{aspect-ratio:16/10}
+.jfy-special-body{padding:17px 19px 19px;flex:1;display:flex;flex-direction:column}
+.jfy-special-body h3{font-size:17.4px;color:var(--jfy-deep);margin-bottom:7px}
+.jfy-special-body p{font-size:13.6px;color:var(--jfy-ink-soft);flex:1}
+.jfy-status{
+  display:inline-flex;align-items:center;gap:6px;margin-top:12px;font-size:12.4px;
+  color:var(--jfy-green);font-weight:700;background:rgba(27,77,62,.08);border-radius:999px;padding:3px 12px;align-self:flex-start;
+}
+.jfy-status i{width:7px;height:7px;border-radius:50%;background:#37a06f}
+.jfy-status.jfy-status-hold{color:#a1712a;background:rgba(200,153,46,.14)}
+.jfy-status.jfy-status-hold i{background:#c8992e}
+
+/* 视频流卡片 */
+.jfy-flow-filter{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:24px}
+.jfy-chip{
+  padding:7px 16px;border-radius:999px;border:1px solid var(--jfy-line);font-size:13.4px;
+  color:var(--jfy-ink-soft);background:var(--jfy-white);font-weight:600;transition:.2s;
+}
+.jfy-chip:hover{border-color:var(--jfy-green-soft);color:var(--jfy-green)}
+.jfy-chip.jfy-chip-on{background:var(--jfy-green);border-color:var(--jfy-green);color:#fff}
+.jfy-flow-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.jfy-card{
+  background:var(--jfy-white);border:1px solid var(--jfy-line);border-radius:18px;overflow:hidden;
+  transition:.26s;display:flex;flex-direction:column;box-shadow:0 6px 16px rgba(18,51,42,.05);
+}
+.jfy-card:hover{transform:translateY(-5px);box-shadow:0 16px 32px rgba(18,51,42,.13)}
+.jfy-card.jfy-hide{display:none}
+.jfy-card-body{padding:15px 17px 17px;display:flex;flex-direction:column;flex:1}
+.jfy-card-body h3{font-size:16.2px;color:var(--jfy-deep);margin-bottom:6px;line-height:1.5}
+.jfy-card-body p{font-size:13.4px;color:var(--jfy-ink-soft);flex:1}
+.jfy-tags{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0 12px}
+.jfy-tag{font-size:11.8px;color:var(--jfy-green-soft);background:rgba(44,107,87,.1);border-radius:7px;padding:2px 9px}
+.jfy-card-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:12.8px;color:var(--jfy-moss)}
+.jfy-avatar{
+  width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:12.4px;
+  font-weight:800;color:#fff;flex:none;
+}
+.jfy-author{display:flex;align-items:center;gap:8px;font-weight:600;color:var(--jfy-ink-soft)}
+.jfy-ops{display:flex;gap:12px}
+.jfy-op{display:inline-flex;align-items:center;gap:5px;font-size:12.8px;color:var(--jfy-moss);font-weight:700;transition:.2s}
+.jfy-op:hover{color:var(--jfy-green)}
+.jfy-op.jfy-liked{color:#c1471f}
+.jfy-op.jfy-saved{color:var(--jfy-gold)}
+
+/* 创作者 */
+.jfy-creator-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.jfy-creator{
+  background:var(--jfy-white);border:1px solid var(--jfy-line);border-radius:20px;padding:22px;
+  display:flex;gap:16px;transition:.26s;align-items:flex-start;
+}
+.jfy-creator:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(18,51,42,.12)}
+.jfy-creator-ava{
+  width:58px;height:58px;border-radius:18px;flex:none;display:grid;place-items:center;
+  color:#fff;font-size:22px;font-weight:900;letter-spacing:1px;
+}
+.jfy-creator h3{font-size:16.6px;color:var(--jfy-deep)}
+.jfy-creator .jfy-creator-field{font-size:12.6px;color:var(--jfy-gold);font-weight:700;margin:2px 0 7px;letter-spacing:.5px}
+.jfy-creator p{font-size:13.3px;color:var(--jfy-ink-soft)}
+.jfy-creator-nums{display:flex;gap:14px;margin-top:10px;font-size:12.4px;color:var(--jfy-moss)}
+.jfy-creator-nums b{color:var(--jfy-green)}
+.jfy-creator-more{margin-top:12px}
+
+/* 影像墙 */
+.jfy-wall{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.jfy-wall-item{position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--jfy-line);transition:.26s;background:#dde6da}
+.jfy-wall-item svg{width:100%;height:100%;display:block}
+.jfy-wall-item:hover{transform:scale(1.025);box-shadow:0 14px 28px rgba(18,51,42,.16)}
+.jfy-wall-item figcaption{
+  position:absolute;left:0;right:0;bottom:0;padding:22px 12px 10px;color:#fdf8ec;font-size:12.6px;font-weight:700;
+  background:linear-gradient(transparent,rgba(9,26,21,.82));
+}
+.jfy-wall-big{grid-column:span 2;grid-row:span 2}
+.jfy-wall-wide{grid-column:span 2}
+.jfy-wall-lg{grid-row:span 2}
+
+/* 评论 */
+.jfy-review-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.jfy-review{
+  background:var(--jfy-white);border:1px solid var(--jfy-line);border-radius:18px;padding:20px 22px;
+  position:relative;box-shadow:0 6px 16px rgba(18,51,42,.05);
+}
+.jfy-review::before{
+  content:"“";position:absolute;right:20px;top:4px;font-size:58px;color:rgba(27,77,62,.1);
+  font-family:Georgia,serif;line-height:1;
+}
+.jfy-review p{font-size:14.2px;color:var(--jfy-ink-soft);margin-bottom:14px;position:relative;z-index:1}
+.jfy-review-user{display:flex;align-items:center;gap:11px}
+.jfy-review-user strong{font-size:13.8px;color:var(--jfy-deep);display:block}
+.jfy-review-user small{font-size:12.2px;color:var(--jfy-moss)}
+.jfy-stars{color:var(--jfy-gold);font-size:13px;letter-spacing:2px;margin-bottom:9px}
+
+/* 更新日志 */
+.jfy-log{display:grid;gap:0;position:relative;padding-left:26px}
+.jfy-log::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:var(--jfy-line)}
+.jfy-log-item{position:relative;padding:0 0 26px 6px}
+.jfy-log-item:last-child{padding-bottom:0}
+.jfy-log-item::before{
+  content:"";position:absolute;left:-25px;top:8px;width:12px;height:12px;border-radius:50%;
+  background:var(--jfy-cream);border:3px solid var(--jfy-gold);
+}
+.jfy-log-item time{font-size:12.4px;color:var(--jfy-gold);font-weight:800;letter-spacing:.8px}
+.jfy-log-item h4{font-size:16px;color:var(--jfy-deep);margin:3px 0 5px}
+.jfy-log-item p{font-size:13.6px;color:var(--jfy-ink-soft)}
+
+/* FAQ */
+.jfy-faq{display:grid;gap:12px;max-width:900px;margin-inline:auto}
+.jfy-faq details{
+  background:var(--jfy-white);border:1px solid var(--jfy-line);border-radius:14px;overflow:hidden;
+  transition:.2s;
+}
+.jfy-faq details[open]{border-color:var(--jfy-green-soft);box-shadow:0 10px 24px rgba(18,51,42,.09)}
+.jfy-faq summary{
+  list-style:none;cursor:pointer;padding:16px 52px 16px 20px;font-size:15.2px;font-weight:700;
+  color:var(--jfy-deep);position:relative;
+}
+.jfy-faq summary::-webkit-details-marker{display:none}
+.jfy-faq summary::after{
+  content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);
+  font-size:21px;color:var(--jfy-green);font-weight:400;transition:.2s;
+}
+.jfy-faq details[open] summary::after{content:"–"}
+.jfy-faq .jfy-faq-a{padding:0 20px 18px;font-size:14px;color:var(--jfy-ink-soft);border-top:1px dashed var(--jfy-line);padding-top:13px}
+
+/* 联系/投稿 */
+.jfy-cta{
+  display:grid;grid-template-columns:1.15fr .85fr;gap:38px;align-items:center;
+  background:linear-gradient(135deg,rgba(255,253,248,.08),rgba(243,201,105,.14));
+  border:1px solid rgba(243,201,105,.32);border-radius:26px;padding:40px 42px;
+}
+.jfy-cta h2{font-size:clamp(24px,2.8vw,32px);color:#fffdf8;margin-bottom:10px}
+.jfy-cta p{color:#c3d6cc;font-size:14.8px}
+.jfy-cta-actions{display:flex;flex-direction:column;gap:12px}
+.jfy-cta-actions .jfy-btn{width:100%}
+.jfy-cta-note{font-size:12.6px;color:#9dbaad;text-align:center}
+
+/* 页脚 */
+.jfy-footer{background:#0e2a22;color:#b9cfc3;padding:58px 0 0;font-size:14px}
+.jfy-footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:32px;padding-bottom:38px}
+.jfy-footer h4{color:#f3ecdc;font-size:15px;margin-bottom:14px;letter-spacing:1px}
+.jfy-footer li{padding:5px 0;font-size:13.4px;color:#a4bfb2}
+.jfy-footer a:hover{color:var(--jfy-gold-light)}
+.jfy-footer-brand{display:flex;align-items:center;gap:11px;margin-bottom:14px}
+.jfy-footer-brand .jfy-brand-mark{width:40px;height:40px;font-size:18px}
+.jfy-footer-brand strong{color:#fff;font-size:17px;letter-spacing:1px;display:block}
+.jfy-footer-brand em{font-style:normal;font-size:11px;letter-spacing:2px;color:#7c9c8d}
+.jfy-footer p{font-size:13.2px;color:#9db9ac;line-height:1.85}
+.jfy-footer-bottom{
+  border-top:1px solid rgba(255,255,255,.1);padding:18px 0;display:flex;justify-content:space-between;
+  gap:16px;flex-wrap:wrap;font-size:12.6px;color:#87a295;
+}
+
+/* 回到顶部 + Toast */
+.jfy-backtop{
+  position:fixed;right:22px;bottom:26px;width:48px;height:48px;border-radius:50%;
+  background:var(--jfy-green);color:#fff;display:grid;place-items:center;font-size:18px;
+  box-shadow:0 12px 26px rgba(18,51,42,.3);opacity:0;pointer-events:none;transition:.28s;z-index:80;
+}
+.jfy-backtop.jfy-show{opacity:1;pointer-events:auto}
+.jfy-backtop:hover{background:var(--jfy-green-soft);transform:translateY(-3px)}
+.jfy-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);background:rgba(14,42,34,.95);
+  color:#f6efdd;padding:11px 22px;border-radius:999px;font-size:13.6px;z-index:120;
+  opacity:0;pointer-events:none;transition:.3s;box-shadow:0 12px 30px rgba(0,0,0,.3);
+}
+.jfy-toast.jfy-show{opacity:1;transform:translate(-50%,0)}
+
+/* 弹窗 */
+.jfy-modal-mask{
+  position:fixed;inset:0;background:rgba(9,26,21,.6);backdrop-filter:blur(4px);
+  display:none;place-items:center;padding:24px;z-index:110;
+}
+.jfy-modal-mask.jfy-show{display:grid}
+.jfy-modal{
+  background:var(--jfy-white);border-radius:22px;max-width:520px;width:100%;padding:28px 30px;
+  box-shadow:0 30px 70px rgba(0,0,0,.35);position:relative;max-height:86vh;overflow:auto;
+}
+.jfy-modal h3{font-size:20px;color:var(--jfy-deep);margin-bottom:10px}
+.jfy-modal p{font-size:14px;color:var(--jfy-ink-soft);margin-bottom:14px}
+.jfy-modal label{display:block;font-size:13px;color:var(--jfy-green);font-weight:700;margin:12px 0 6px}
+.jfy-modal input,.jfy-modal textarea{
+  width:100%;border:1px solid var(--jfy-line);border-radius:11px;padding:10px 13px;font-size:14px;
+  font-family:inherit;outline:none;background:#fff;color:var(--jfy-ink);
+}
+.jfy-modal textarea{min-height:88px;resize:vertical}
+.jfy-modal input:focus,.jfy-modal textarea:focus{border-color:var(--jfy-green-soft);box-shadow:0 0 0 3px rgba(44,107,87,.13)}
+.jfy-modal-close{
+  position:absolute;right:16px;top:14px;width:32px;height:32px;border-radius:50%;
+  background:rgba(27,77,62,.08);color:var(--jfy-green);font-size:16px;display:grid;place-items:center;
+}
+.jfy-modal-close:hover{background:rgba(27,77,62,.16)}
+.jfy-modal .jfy-btn{margin-top:18px}
+.jfy-share-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
+.jfy-share-row button{
+  border:1px solid var(--jfy-line);border-radius:12px;padding:11px 6px;font-size:13.4px;
+  font-weight:700;color:var(--jfy-green);background:#fff;transition:.2s;
+}
+.jfy-share-row button:hover{background:rgba(27,77,62,.08)}
+
+/* 响应式 */
+@media (max-width:1080px){
+  .jfy-hero-grid{grid-template-columns:1fr;gap:36px}
+  .jfy-hero-stats{max-width:none}
+  .jfy-parse{grid-template-columns:1fr}
+  .jfy-parse-side{position:static;grid-template-columns:repeat(2,1fr)}
+  .jfy-focus-grid{grid-template-columns:1fr}
+  .jfy-special-grid,.jfy-creator-grid,.jfy-flow-grid{grid-template-columns:repeat(2,1fr)}
+  .jfy-wall{grid-template-columns:repeat(3,1fr)}
+  .jfy-wall-big{grid-column:span 2}
+  .jfy-footer-grid{grid-template-columns:1fr 1fr}
+  .jfy-cta{grid-template-columns:1fr;padding:32px 26px}
+}
+@media (max-width:860px){
+  html{scroll-padding-top:170px}
+  .jfy-search{display:none}
+  .jfy-burger{display:grid}
+  .jfy-menu{
+    display:none;position:absolute;top:calc(100% + 1px);left:0;right:0;background:var(--jfy-white);
+    border-bottom:1px solid var(--jfy-line);padding:10px 0 16px;box-shadow:0 18px 30px rgba(18,51,42,.12);
+    flex-direction:column;gap:0;margin:0;
+  }
+  .jfy-menu.jfy-open{display:flex}
+  .jfy-menu a{padding:12px 6%;border-radius:0;font-size:15.4px}
+  .jfy-nav-wrap{position:relative}
+  .jfy-review-grid{grid-template-columns:1fr}
+  .jfy-wall{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:640px){
+  .jfy-special-grid,.jfy-creator-grid,.jfy-flow-grid{grid-template-columns:1fr}
+  .jfy-parse-side{grid-template-columns:1fr}
+  .jfy-hero-stats{grid-template-columns:1fr 1fr}
+  .jfy-wall{grid-template-columns:1fr 1fr}
+  .jfy-wall-big,.jfy-wall-wide,.jfy-wall-lg{grid-column:span 2;grid-row:auto}
+  .jfy-footer-grid{grid-template-columns:1fr}
+  .jfy-mini{grid-template-columns:104px 1fr}
+  .jfy-announce-list{animation-duration:34s}
+  .jfy-hero-float{display:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶：公告条 + 页头 -->
+<div class="jfy-sticky-top">
+  <div class="jfy-announce" role="region" aria-label="官方公告">
+    <div class="jfy-container jfy-announce-inner">
+      <span class="jfy-announce-tag">官方发布</span>
+      <div class="jfy-announce-ticker">
+        <div class="jfy-announce-list">
+          <span>集芳阁云搜 <b>「云隙索引」</b> 秋季专题上线，收录 128 部原创短片</span>
+          <span><b>新人创作者扶持计划第 4 期</b> 报名通道开启，截至 11 月 30 日</span>
+          <span>企业动态：官方网站内容中台完成高清转码升级，加载速度提升 42%</span>
+          <span><b>城市影像挑战赛·集芳阁站</b> 投稿持续开放，主题「巷口的四季」</span>
+          <span>集芳阁云搜 <b>「云隙索引」</b> 秋季专题上线，收录 128 部原创短片</span>
+          <span><b>新人创作者扶持计划第 4 期</b> 报名通道开启，截至 11 月 30 日</span>
+          <span>企业动态：官方网站内容中台完成高清转码升级，加载速度提升 42%</span>
+          <span><b>城市影像挑战赛·集芳阁站</b> 投稿持续开放，主题「巷口的四季」</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="jfy-header">
+    <div class="jfy-container jfy-nav-wrap">
+      <a class="jfy-brand" href="#jfy-top" aria-label="集芳阁云搜首页">
+        <span class="jfy-brand-mark">集</span>
+        <span class="jfy-brand-text">
+          <strong>集芳阁云搜</strong>
+          <em>JIFANGGE CLOUD</em>
+        </span>
+      </a>
+      <nav class="jfy-menu" id="jfyMenu" aria-label="主导航">
+        <a href="#jfy-top" class="jfy-active">首页</a>
+        <a href="#jfy-focus">焦点内容</a>
+        <a href="#jfy-special">专题企划</a>
+        <a href="#jfy-flow">热门视频</a>
+        <a href="#jfy-creator">创作者</a>
+        <a href="#jfy-log">企业动态</a>
+        <a href="#jfy-faq">帮助</a>
+        <a href="#jfy-join">联系</a>
+      </nav>
+      <div class="jfy-nav-tools">
+        <div class="jfy-search">
+          <input id="jfySearchInput" type="search" placeholder="搜索视频、专题、创作者" aria-label="站内搜索">
+          <button class="jfy-search-btn" id="jfySearchBtn" aria-label="搜索">🔍</button>
+          <div class="jfy-search-tip" id="jfySearchTip"></div>
+        </div>
+        <button class="jfy-burger" id="jfyBurger" aria-label="展开导航" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="jfy-top">
+
+  <!-- 首屏 -->
+  <section class="jfy-hero">
+    <div class="jfy-container jfy-hero-grid">
+      <div class="jfy-hero-text">
+        <span class="jfy-hero-kicker">集芳阁云搜 · 官方网站</span>
+        <h1>集芳阁<span>云搜</span></h1>
+        <p class="jfy-hero-slogan">把散落的好内容，收进一座可检索的花阁</p>
+        <p class="jfy-hero-desc">
+          集芳阁云搜是一个以「云端索引 + 原创影像」为核心的视频品牌平台。作为深耕内容生态的
+          企业级官方网站，我们把城市记录、手作日常、人物访谈与深度测评收拢于同一套清晰的内容体系，
+          让每一次搜索都能抵达一支值得看完的片子。
+        </p>
+        <div class="jfy-hero-actions">
+          <a class="jfy-btn jfy-btn-primary" href="#jfy-focus">进入焦点内容 →</a>
+          <a class="jfy-btn jfy-btn-ghost" href="#jfy-join">投稿与报名</a>
+          <button class="jfy-btn jfy-btn-gold" data-jfy-modal="share">分享官网</button>
+        </div>
+        <div class="jfy-hero-stats">
+          <div class="jfy-hero-stat"><b>2.6 万+</b><span>入库原创作品</span></div>
+          <div class="jfy-hero-stat"><b>418 位</b><span>签约创作者</span></div>
+          <div class="jfy-hero-stat"><b>9 年</b><span>持续运营</span></div>
+        </div>
+      </div>
+
+      <div class="jfy-hero-visual">
+        <div class="jfy-hero-float"><i></i>今日新增 37 条高清内容</div>
+        <div class="jfy-hero-cover">
+          <svg viewBox="0 0 640 400" role="img" aria-label="集芳阁云搜品牌主视觉：暮色中的阁楼与云端索引光线">
+            <defs>
+              <linearGradient id="jfySky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#1c4b3c"/>
+                <stop offset="52%" stop-color="#2f7a61"/>
+                <stop offset="100%" stop-color="#a9c8ad"/>
+              </linearGradient>
+              <linearGradient id="jfyGlow" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#f3c969" stop-opacity=".9"/>
+                <stop offset="1" stop-color="#f3c969" stop-opacity="0"/>
+              </linearGradient>
+              <linearGradient id="jfyRoof" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#0f2c24"/>
+                <stop offset="1" stop-color="#1d4a3b"/>
+              </linearGradient>
+            </defs>
+            <rect width="640" height="400" fill="url(#jfySky)"/>
+            <circle cx="500" cy="112" r="72" fill="url(#jfyGlow)"/>
+            <circle cx="500" cy="112" r="34" fill="#f6d98c" opacity=".85"/>
+            <g opacity=".2" stroke="#ffe9b8" stroke-width="1.6" fill="none">
+              <path d="M40 300 Q 170 258 300 292 T 600 268"/>
+              <path d="M40 330 Q 180 292 320 322 T 600 300"/>
+              <path d="M40 360 Q 190 330 340 352 T 600 336"/>
+            </g>
+            <g fill="#16382d">
+              <rect x="120" y="248" width="300" height="128" rx="4"/>
+              <rect x="150" y="214" width="240" height="42" rx="3"/>
+            </g>
+            <path d="M100 250 L270 178 L440 250 Z" fill="url(#jfyRoof)"/>
+            <path d="M136 215 L270 162 L404 215 Z" fill="#204f3f"/>
+            <g fill="#f3c969" opacity=".92">
+              <rect x="160" y="272" width="34" height="46" rx="3"/>
+              <rect x="214" y="272" width="34" height="46" rx="3"/>
+              <rect x="268" y="272" width="34" height="46" rx="3"/>
+              <rect x="322" y="272" width="34" height="46" rx="3"/>
+              <rect x="200" y="222" width="46" height="26" rx="3" opacity=".75"/>
+              <rect x="294" y="222" width="46" height="26" rx="3" opacity=".75"/>
+            </g>
+            <g stroke="#f3c969" stroke-width="2" fill="none" opacity=".8">
+              <path d="M270 162 L270 96"/>
+              <circle cx="270" cy="88" r="9" fill="#f3c969" stroke="none"/>
+              <path d="M270 60 L270 76" stroke-dasharray="4 5"/>
+            </g>
+            <g fill="#a9c8ad" opacity=".5">
+              <rect x="470" y="286" width="90" height="90" rx="5"/>
+              <rect x="488" y="266" width="54" height="22" rx="3"/>
+            </g>
+            <g stroke="#cfe6d6" stroke-width="2" opacity=".55" fill="none">
+              <path d="M44 128 a34 22 0 0 1 66 -6 a26 18 0 0 1 28 26 l-94 0 a22 16 0 0 1 0 -20"/>
+            </g>
+          </svg>
+          <div class="jfy-hero-badge">
+            <span>本季主推 · <b>《云隙索引》</b> 城市影像计划</span>
+            <span>6 集 · 16:9 高清</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关键词解析 / 品牌深度解析 -->
+  <section class="jfy-section" aria-labelledby="jfy-parse-title">
+    <div class="jfy-container">
+      <div class="jfy-head">
+        <div>
+          <span class="jfy-head-kicker">Brand Story</span>
+          <h2 id="jfy-parse-title">集芳阁云搜品牌深度解析</h2>
+          <p>从一个检索框，到一套可被反复使用的内容索引体系。</p>
+        </div>
+        <button class="jfy-btn jfy-btn-ghost" data-jfy-modal="about">了解品牌故事</button>
+      </div>
+
+      <div class="jfy-parse">
+        <div>
+          <h3>为什么叫「集芳阁云搜」</h3>
+          <p>
+            集芳阁云搜最初并不是一个商业项目，而是一份私人整理表。九年前，三位分别做纪录片、剪辑与前端
+            开发的合作者，习惯把各自收藏的短片链接放进同一张表里，并戏称它为「集芳阁」——把散落各处的好
+            内容像花一样收进一座阁楼。随着条目从两百条增长到两万条，这张表已经无法承载检索需求，于是我们
+            把它做成了一套真正的云端内容索引系统，「云搜」由此而来，也成为了这个视频品牌最具辨识度的名字。
+          </p>
+          <p>
+            作为集芳阁云搜的官方网站，我们始终坚持一件事：让内容先于算法被看见。平台不追求以滑动换取停留
+            时长的信息流，而是以「关键词—专题—创作者」三层结构组织内容。每一条入库影像都配有完整的标签、
+            时长、拍摄地与创作手记，用户既能通过搜索框精确找到一支片子，也能顺着专题线索一路看下去。这
+            套结构让我们在企业级内容服务中也保持了统一的专业度。
+          </p>
+
+          <h3>云搜：把「找内容」变成一种可控的体验</h3>
+          <p>
+            云搜是集芳阁云搜的核心技术品牌。它并非简单的站内检索框，而是一套包含语义标签、相似影像推荐、
+            作者关联与时间线回溯的内容定位系统。举例来说，当你输入「巷口」「雨」「手艺」这样的组合词，
+            云搜会优先返回同时命中三个语义标签的原创作品，而不是随机推荐热门内容。对创作者而言，云搜提供
+            了作品被精准检索的机会；对用户而言，它意味着更少的时间消耗与更高的内容命中率。
+          </p>
+          <p>
+            云搜的标签体系由人工与机器共同校准。每一部投稿作品都会经过至少一轮人工复核，确认题材、地域、
+            情绪基调与安全合规项，再由系统生成相似索引。这套流程让我们在保持内容多元的同时，也维持了值得
+            信赖的品质底线。截至目前，平台已建立 1680 个语义标签、42 个一级专题簇，覆盖城市探索、手作
+            DIY、人物访谈、深度测评、治愈影像等长期运营方向。
+          </p>
+
+          <h3>我们如何定义「精品内容」</h3>
+          <p>
+            在集芳阁云搜，精品内容有三个可被检验的标准：说法清楚、情绪真实、画面可看。说法清楚，指的是
+            知识科普与教程干货必须给得出步骤和结论；情绪真实，指的是人物访谈与日常记录不能靠摆拍制造感动；
+            画面可看，指的是在 16:9 的高清画幅内，构图、收音与剪辑至少有一项达到专业水准。我们不反对
+            粗糙的影像实验，但我们在意创作者是否对自己交付的内容负责。
+          </p>
+          <p>
+            基于这三个标准，企业内容团队与社区创作者共用同一套评审面板。品牌合作项目会明确标注「官方发布」
+            或「合作企划」，商业内容与原创内容在检索结果中分区呈现，避免混淆。这也是我们作为深耕垂直领域
+            的内容平台，对用户至上的具体落实：让每一条内容的来源与性质都能被追溯。
+          </p>
+
+          <h3>创作者生态：从投稿到长期陪伴</h3>
+          <p>
+            集芳阁云搜的创作者体系分为三个层级：投稿作者、签约创作者与联合出品人。投稿作者可通过统一入口
+            上传作品并接受评审反馈；签约创作者会获得选题共创、拍摄协调与高清转码支持；联合出品人则参与年度
+            专题的策划与制作。我们刻意保留了一条较长的成长路径，因为影像创作需要试错空间，而平台的责任是
+            提供稳定的陪伴，而不是用一次性流量消耗掉新人的热情。
+          </p>
+          <p>
+            过去三年，平台累计举办 11 场影像挑战赛、6 届年度投票评选，共有 418 位创作者参与过至少一次官方
+            企划。年轻作者的成长轨迹被记录在「创作者时间线」页面中：第一次投稿、第一条破万播放、第一次参与
+            联合出品，都会被保留。这种记录本身，构成了集芳阁云搜作为视频社区最具分量的资产。
+          </p>
+
+          <h3>企业视角：内容生态也是品牌资产</h3>
+          <p>
+            对于企业客户，集芳阁云搜提供的是「内容资产化」服务：把分散在各部门的产品视频、活动记录、人物
+            访谈统一入库，通过云搜标签体系实现跨项目复用。很多企业并不缺影像素材，缺的是能被快速检索与二
+            次利用的索引结构。我们帮助客户建立内部影像库，配套权限管理与高清下载通道，让一次拍摄可以在
+            多个场景中重复发挥价值。
+          </p>
+          <p>
+            与此同时，我们坚持把社区内容与企业内容放在同一套品质标准下评估。社会责任在这里不是一句口号：
+            平台设有内容安全委员会、创作者申诉通道与未成年人保护规则，并每年发布一次内容治理说明。我们相
+            信，只有把规则说清楚，品牌与社区才可能长期共存。集芳阁云搜希望成为一个有耐心的平台——它不制
+            造热点，但愿意为值得的内容留出位置。
+          </p>
+        </div>
+
+        <aside class="jfy-parse-side" aria-label="品牌信息速览">
+          <div class="jfy-side-card">
+            <h4>品牌速览</h4>
+            <ul>
+              <li>成立时间：2017 年 6 月</li>
+              <li>定位：云端索引型视频社区</li>
+              <li>核心产品：云搜内容定位系统</li>
+              <li>入库作品：2.6 万余部</li>
+              <li>签约创作者：418 位</li>
+              <li>语义标签：1680 个</li>
+            </ul>
+          </div>
+          <div class="jfy-side-card">
+            <h4>内容准则</h4>
+            <ul>
+              <li>说法清楚：给出结论与步骤</li>
+              <li>情绪真实：拒绝摆拍式感动</li>
+              <li>画面可看：专业水准优先</li>
+              <li>来源可溯：商区与原创分区</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点内容 -->
+  <section class="jfy-section jfy-section-alt" id="jfy-focus" aria-labelledby="jfy-focus-title">
+    <div class="jfy-container">
+      <div class="jfy-head">
+        <div>
+          <span class="jfy-head-kicker">Focus</span>
+          <h2 id="jfy-focus-title">焦点内容</h2>
+          <p>本期编辑手工挑选 6 部作品，覆盖城市、手艺与人物三条主线。</p>
+        </div>
+        <button class="jfy-btn jfy-btn-primary" data-jfy-modal="feedback">内容反馈</button>
+      </div>
+
+      <div class="jfy-focus-grid">
+        <article class="jfy-focus-main">
+          <div class="jfy-cover">
+            <svg viewBox="0 0 640 360" role="img" aria-label="焦点内容封面：清晨巷口与推着旧自行车的老人">
+              <defs>
+                <linearGradient id="jfyF1" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#f4d9a3"/>
+                  <stop offset="55%" stop-color="#d9a86c"/>
+                  <stop offset="100%" stop-color="#8b6242"/>
+                </linearGradient>
+              </defs>
+              <rect width="640" height="360" fill="url(#jfyF1)"/>
+              <g fill="#6d4a30" opacity=".85">
+                <rect x="0" y="228" width="640" height="132"/>
+                <rect x="52" y="118" width="120" height="112" rx="4"/>
+                <rect x="470" y="150" width="130" height="80" rx="4"/>
+              </g>
+              <g fill="#f0e0c4" opacity=".9">
+                <rect x="68" y="136" width="30" height="34"/><rect x="112" y="136" width="30" height="34"/>
+                <rect x="486" y="166" width="34" height="26"/><rect x="534" y="166" width="34" height="26"/>
+              </g>
+              <g stroke="#4a3220" stroke-width="4" fill="none">
+                <circle cx="268" cy="282" r="26"/><circle cx="382" cy="282" r="26"/>
+                <path d="M268 282 L318 262 L382 282 M318 262 L338 282 M300 232 L338 282"/>
+                <path d="M314 232 L300 216"/>
+              </g>
+              <g fill="#3d2a1b">
+                <circle cx="300" cy="200" r="17"/>
+                <rect x="288" y="218" width="26" height="54" rx="9"/>
+              </g>
+              <g stroke="#f9efd9" stroke-width="3" opacity=".45" fill="none">
+                <path d="M-10 96 Q 160 68 340 94 T 660 82"/>
+                <path d="M-10 60 Q 180 34 360 58 T 660 48"/>
+              </g>
+            </svg>
+            <span class="jfy-cover-tag">本季主推</span>
+            <span class="jfy-cover-play"><span></span></span>
+            <span class="jfy-cover-dur">18:42</span>
+          </div>
+          <div class="jfy-focus-body">
+            <h3>巷口的四季：一辆旧自行车与十七年修车摊</h3>
+            <p>
+              在城南老街的拐角，老周守着一辆 1998 年的旧自行车与一方两米见方的修车摊。镜头跟着他穿过
+              四季：春天的链条、夏天的爆胎、秋天的补胶、冬天的打气筒。这是一部关于手艺如何被需要的纪录片。
+            </p>
+            <div class="jfy-meta">
+              <span>创作者 <b>老城拾光</b></span>
+              <span>城市探索</span>
+              <span>2026-11-08 发布</span>
+              <span>热度 8.6 万</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="jfy-focus-side">
+          <article class="jfy-mini">
+            <div class="jfy-cover">
+              <svg viewBox="0 0 320 180" role="img" aria-label="焦点内容封面：手作陶土在拉坯机上成形">
+                <rect width="320" height="180" fill="#c9a27a"/>
+                <ellipse cx="160" cy="126" rx="74" ry="18" fill="#8d6a48"/>
+                <path d="M132 126 Q 128 88 148 66 L172 66 Q 192 88 188 126 Z" fill="#e5c9a6"/>
+                <g stroke="#6f5136" stroke-width="3" fill="none" opacity=".75">
+                  <path d="M126 140 h68"/>
+                </g>
+              </svg>
+              <span class="jfy-cover-play"><span></span></span>
+            </div>
+            <div>
+              <h4>手作陶土第 12 期：为什么你的坯总是塌在最后三分钟</h4>
+              <small>陶野手记 · 教程干货 · 22:05</small>
+            </div>
+          </article>
+          <article class="jfy-mini">
+            <div class="jfy-cover">
+              <svg viewBox="0 0 320 180" role="img" aria-label="焦点内容封面：深色书架与一盏台灯">
+                <rect width="320" height="180" fill="#1d3a32"/>
+                <g fill="#2f5c4d">
+                  <rect x="24" y="36" width="272" height="10"/>
+                  <rect x="24" y="94" width="272" height="10"/>
+                  <rect x="24" y="148" width="272" height="8"/>
+                </g>
+                <g fill="#c8992e">
+                  <rect x="40" y="8" width="12" height="28"/><rect x="60" y="2" width="9" height="34"/>
+                  <rect x="76" y="12" width="14" height="24"/><rect x="220" y="6" width="10" height="30"/>
+                </g>
+                <circle cx="150" cy="72" r="20" fill="#f3c969" opacity=".9"/>
+                <path d="M150 92 L150 104 L168 110" stroke="#f3c969" stroke-width="3" fill="none"/>
+              </svg>
+              <span class="jfy-cover-play"><span></span></span>
+            </div>
+            <div>
+              <h4>深夜书单：六本适合在小雪前读完的影像随笔</h4>
+              <small>一页光年 · 深度测评 · 14:30</small>
+            </div>
+          </article>
+          <article class="jfy-mini">
+            <div class="jfy-cover">
+              <svg viewBox="0 0 320 180" role="img" aria-label="焦点内容封面：山脊线与徒步者剪影">
+                <defs>
+                  <linearGradient id="jfyF4" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#7fa3b8"/>
+                    <stop offset="100%" stop-color="#2b4a52"/>
+                  </linearGradient>
+                </defs>
+                <rect width="320" height="180" fill="url(#jfyF4)"/>
+                <path d="M0 132 L64 82 L112 120 L168 72 L232 128 L280 96 L320 124 L320 180 L0 180 Z" fill="#1e3a40"/>
+                <path d="M0 152 L58 118 L120 150 L186 112 L250 148 L320 126 L320 180 L0 180 Z" fill="#122a2e"/>
+                <g fill="#f4e7cd"><circle cx="168" cy="66" r="6"/><rect x="164" y="72" width="8" height="18" rx="3"/></g>
+              </svg>
+              <span class="jfy-cover-play"><span></span></span>
+            </div>
+            <div>
+              <h4>轻量徒步攻略：一天往返的三条低海拔路线</h4>
+              <small>山行笔记 · 实用技巧 · 26:18</small>
+            </div>
+          </article>
+          <article class="jfy-mini">
+            <div class="jfy-cover">
+              <svg viewBox="0 0 320 180" role="img" aria-label="焦点内容封面：毛衣针与毛线团的特写">
+                <rect width="320" height="180" fill="#e6d3c4"/>
+                <circle cx="108" cy="112" r="42" fill="#b4674c"/>
+                <circle cx="108" cy="112" r="24" fill="#c9846b"/>
+                <g stroke="#8d6b53" stroke-width="5" stroke-linecap="round">
+                  <path d="M170 50 L262 132"/><path d="M188 40 L276 118"/>
+                </g>
+                <path d="M120 96 Q 200 60 250 100" stroke="#b4674c" stroke-width="4" fill="none"/>
+              </svg>
+              <span class="jfy-cover-play"><span></span></span>
+            </div>
+            <div>
+              <h4>一件旧毛衣的改造：从拆线到重新起针的四十分钟</h4>
+              <small>慢针线 · 手作 DIY · 19:56</small>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section class="jfy-section" id="jfy-special" aria-labelledby="jfy-special-title">
+    <div class="jfy-container">
+      <div class="jfy-head">
+        <div>
+          <span class="jfy-head-kicker">Series</span>
+          <h2 id="jfy-special-title">专题企划</h2>
+          <p>以季度为单位持续更新，每个专题都是一条可被追溯的观看路径。</p>
+        </div>
+        <a class="jfy-btn jfy-btn-ghost" href="#jfy-flow">查看全部专题</a>
+      </div>
+
+      <div class="jfy-special-grid">
+        <article class="jfy-special">
+          <div class="jfy-cover">
+            <svg viewBox="0 0 640 400" role="img" aria-label="专题封面：雨后玻璃窗与模糊的城市灯光">
+              <defs>
+                <linearGradient id="jfyS1" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#3d6a63"/>
+                  <stop offset="100%" stop-color="#152f2b"/>
+                </linearGradient>
+              </defs>
+              <rect width="640" height="400" fill="url(#jfyS1)"/>
+              <g fill="#f3c969" opacity=".55">
+                <circle cx="140" cy="150" r="30"/><circle cx="330" cy="98" r="20"/>
+                <circle cx="520" cy="180" r="26"/><circle cx="250" cy="300" r="18"/>
+              </g>
+              <g stroke="#bfe0d3" stroke-width="2" opacity=".5" fill="none">
+                <path d="M80 60 L80 200"/><path d="M200 30 L200 170"/><path d="M320 40 L320 210"/>
+                <path d="M440 60 L440 190"/><path d="M560 30 L560 160"/>
+              </g>
+              <circle cx="140" cy="150" r="13" fill="#f8ecc9" opacity=".8"/>
+            </svg>
+            <span class="jfy-cover-tag">持续更新</span>
+          </div>
+          <div class="jfy-special-body">
+            <h3>云隙索引 · 秋末的城市切片</h3>
+            <p>六位创作者分别在雨天、清晨与深夜记录同一座城市，累计收录 128 部短片，以云搜标签串成一条可漫游的路线。</p>
+            <span class="jfy-status"><i></i>更新至第 6 集</span>
+          </div>
+        </article>
+
+        <article class="jfy-special">
+          <div class="jfy-cover">
+            <svg viewBox="0 0 640 400" role="img" aria-label="专题封面：木工刨花与工具箱俯拍">
+              <rect width="640" height="400" fill="#cfae83"/>
+              <rect x="0" y="250" width="640" height="150" fill="#a5825b"/>
+              <g fill="#8a6a45">
+                <rect x="70" y="150" width="220" height="22" rx="6"/>
+                <rect x="70" y="150" width="22" height="120" rx="6"/>
+              </g>
+              <g stroke="#f0e0c4" stroke-width="6" fill="none" stroke-linecap="round">
+                <path d="M360 300 Q 400 240 470 262 Q 520 280 500 330"/>
+                <path d="M380 322 Q 420 268 486 288"/>
+              </g>
+              <g fill="#3f2f1f"><rect x="520" y="180" width="70" height="18" rx="8"/></g>
+            </svg>
+            <span class="jfy-cover-tag">创作者共创</span>
+          </div>
+          <div class="jfy-special-body">
+            <h3>手作的第十二道工序</h3>
+            <p>从刨木到上蜡，专题跟踪四位手作人的完整制作流程，并附有每一步的时长与材料清单，适合作为入门参考。</p>
+            <span class="jfy-status jfy-status-hold"><i></i>更新至第 3 集</span>
+          </div>
+        </article>
+
+        <article class="jfy-special">
+          <div class="jfy-cover">
+            <svg viewBox="0 0 640 400" role="img" aria-label="专题封面：访谈现场两把椅子与录音话筒">
+              <rect width="640" height="400" fill="#25443c"/>
+              <circle cx="320" cy="150" r="120" fill="#2f5c4d"/>
+              <g fill="#e3d3b5">
+                <rect x="180" y="230" width="110" height="120" rx="14"/>
+                <rect x="350" y="230" width="110" height="120" rx="14"/>
+                <rect x="214" y="196" width="42" height="40" rx="8"/>
+                <rect x="384" y="196" width="42" height="40" rx="8"/>
+              </g>
+              <g stroke="#c8992e" stroke-width="5" fill="none">
+                <path d="M320 120 L320 170"/><circle cx="320" cy="104" r="14"/>
+              </g>
+            </svg>
+            <span class="jfy-cover-tag">人物访谈</span>
+          </div>
+          <div class="jfy-special-body">
+            <h3>在阁楼里说话的人</h3>
+            <p>八位长期创作者的对谈记录，聊选题焦虑、聊设备、也聊为什么还在拍。每期附一份完整文字稿。</p>
+            <span class="jfy-status"><i></i>更新至第 8 集 · 完结</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 热门视频流 -->
+  <section class="jfy-section jfy-section-alt" id="jfy-flow" aria-labelledby="jfy-flow-title">
+    <div class="jfy-container">
+      <div class="jfy-head">
+        <div>
+          <span class="jfy-head-kicker">Trending</span>
+          <h2 id="jfy-flow-title">热门视频流</h2>
+          <p>按主题筛选，快速找到你此刻想看的那一类内容。</p>
+        </div>
+      </div>
+
+      <div class="jfy-flow-filter" id="jfyFilter" role="tablist" aria-label="视频主题筛选">
+        <button class="jfy-chip jfy-chip-on" data-jfy-filter="all" role="tab">全部</button>
+        <button class="jfy-chip" data-jfy-filter="city" role="tab">城市探索</button>
+        <button class="jfy-chip" data-jfy-filter="craft" role="tab">手作日常</button>
+        <button class="jfy-chip" data-jfy-filter="talk" role="tab">人物访谈</button>
+        <button class="jfy-chip" data-jfy-filter="guide" role="tab">教程干货</button>
+      </div>
+
+      <div class="jfy-flow-grid" id="jfyFlowGrid">
+        <article class="jfy-card" data-jfy-cat="city">
+          <div class="jfy-cover">
+            <svg viewBox="0 0 640 360" role="img" aria-label="视频封面：雨中的老式骑楼街角">
+              <rect width="640" height="360" fill="#5b7f86"/>
+              <rect x="0" y="240" width="640" height="120" fill="#2f4a4f"/>
+              <g fill="#3f6067">
+                <rect x="40" y="110" width="150" height="130"/><rect x="240" y="80" width="170" height="160"/>
+                <rect x="450" y="120" width="150" height="120"/>
+              </g>
+              <g fill="#a9c8c0" opacity=".7">
+                <rect x="60" y="130" width="30" height="36"/><rect x="110" y="130" width="30" height="36"/>
+                <rect x="266" y="104" width="34" height="40"/><rect x="330" y="104" width="34" height="40"/>
+              </g>
+              <g stroke="#cfe6e2" stroke-width="2" opacity=".55">
+                <path d="M20 0 L-20 200"/><path d="M120 0 L70 220"/><path d="M240 0 L190 230"/>
+                <path d="M380 0 L330 210"/><path d="M520 0 L470 200"/>
+              </g>
+            </svg>
+            <span class="jfy-cover-tag">城市探索</span>
+            <span class="jfy-cover-play"><span></span></span>
+            <span class="jfy-cover-dur">12:24</span>
+          </div>
+          <div class="jfy-card-body">
+            <h3>骑楼下的早市：七点前的三百米</h3>
+            <p>跟着一位卖豆腐的阿婆走过整条早市，摊位之间只有三百米，却有二十多种早餐。</p>
+            <div class="jfy-tags"><span class="jfy-tag">#街巷</span><span class="jfy-tag">#早餐</span></div>
+            <div class="jfy-card-foot">
+              <span class="jfy-author"><span class="jfy-avatar" style="background:#2f6f8f">南</span>南巷观察</span>
+              <span class="jfy-ops">
+                <button class="jfy-op" data-jfy-like>♡ <span>236</span></button>
+                <button class="jfy-op" data-jfy-save>☆</button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="jfy-card" data-jfy-cat="craft">
+          <div class="jfy-cover">
+            <svg viewBox="0 0 640 360" role="img" aria-label="视频封面：藤编篮子的编织特写">
+              <rect width="640" height="360" fill="#d8bd92"/>
+              <ellipse cx="320" cy="250" rx="170" ry="52" fill="#b79057"/>
+              <path d="M150 250 Q 160 130 320 120 Q 480 130 490 250" fill="#c9a468"/>
+              <g stroke="#8b6a3c" stroke-width="5" fill="none" opacity=".8">
+                <path d="M170 240 Q 200 150 320 142 Q 440 150 470 240"/>
+                <path d="M180 220 Q 210 168 320 160 Q 430 168 460 220"/>
+                <path d="M196 200 Q 226 184 320 178 Q 414 184 444 200"/>
+              </g>
+              <g stroke="#8b6a3c" stroke-width="4" opacity=".55">
+                <path d="M240 140 L240 250"/><path d="M320 120 L320 260"/><path d="M400 140 L400 250"/>
+              </g>
+            </svg>
+            <span class="jfy-cover-tag">手作日常</span>
+            <span class="jfy-cover-play"><span></span></span>
+            <span class="jfy-cover-dur">21:47</span>
+          </div>
+          <div class="jfy-card-body">
+            <h3>藤编入门：一只篮子的三条起底路径</h3>
+            <p>对比方形底、圆形底与椭圆底的起手方式，附带尺寸表和常见断藤补救方法。</p>
+            <div class="jfy-tags"><span class="jfy-tag">#藤编</span><span class="jfy-tag">#入门</span></div>
+            <div class="jfy-card-foot">
+              <span class="jfy-author"><span class="jfy-avatar" style="background:#8a6a3c">藤</span>藤间手记</span>
+              <span class="jfy-ops">
+                <button class="jfy-op" data-jfy-like>♡ <span>412</span></button>
+                <button class="jfy-op" data-jfy-save>☆</button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="jfy-card" data-jfy-cat="talk">
+          <div class="jfy-cover">
+            <svg viewBox="0 0 640 360" role="img" aria-label="视频封面：访谈室里的两盏补光灯与椅子">
+              <rect width="640" height="360" fill="#4a3f52"/>
+              <rect x="0" y="270" width="640" height="90" fill="#332a39"/>
+              <g fill="#e0d1b8">
+                <rect x="120" y="150" width="110" height="130" rx="14"/>
+                <rect x="400" y="150" width="110" height="130" rx="14"/>
+              </g>
+              <g fill="#f3c969">
+                <circle cx="80" cy="90" r="26" opacity=".9"/><circle cx="560" cy="90" r="26" opacity=".9"/>
+              </g>
+              <g stroke="#f3c969" stroke-width="3" fill="none" opacity=".6">
+                <path d="M100 110 L180 180"/><path d="M540 110 L460 180"/>
+              </g>
+            </svg>
+            <span class="jfy-cover-tag">人物访谈</span>
+            <span class="jfy-cover-play"><span></span></span>
+            <span class="jfy-cover-dur">46:10</span>
+          </div>
+          <div class="jfy-card-body">
+            <h3>拍了十年，他终于承认自己怕镜头</h3>
+            <p>与纪录片摄影师阿澈的两个小时对谈，从第一次开机聊到最近一次关机。</p>
+            <div class="jfy-tags"><span class="jfy-tag">#创作者</span><span class="jfy-tag">#幕后</span></div>
+            <div class="jfy-card-foot">
+              <span class="jfy-author"><span class="jfy-avatar" style="background:#6b4f7a">阁</span>阁中问答</span>
+              <span class="jfy-ops">
+                <button class="jfy-op" data-jfy-like>♡ <span>189</span></button>
+                <button class="jfy-op" data-jfy-save>☆</button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="jfy-card" data-jfy-cat="guide">
+          <div class="jfy-cover">
+            <svg viewBox="0 0 640 360" role="img" aria-label="视频封面：剪辑时间轴与波形图示意">
+              <rect width="640" height="360" fill="#1b2f3a"/>
+              <g fill="#2c4a58">
+                <rect x="40" y="60" width="560" height="60" rx="8"/>
+                <rect x="40" y="140" width="560" height="60" rx="8"/>
+                <rect x="40" y="220" width="560" height="60" rx="8"/>
+              </g>
+              <g fill="#6fb3a8">
+                <rect x="60" y="72" width="180" height="36" rx="5"/>
+                <rect x="270" y="152" width="240" height="36" rx="5"/>
+                <rect x="120" y="232" width="150" height="36" rx="5"/>
+              </g>
+              <g stroke="#f3c969" stroke-width="3" fill="none">
+                <path d="M60 316 L140 300 L220 322 L300 296 L380 318 L460 292 L540 314"/>
+              </g>
+            </svg>
+            <span class="jfy-cover-tag">教程干货</span>
+            <span class="jfy-cover-play"><span></span></span>
+            <span class="jfy-cover-dur">33:08</span>
+          </div>
+          <div class="jfy-card-body">
+            <h3>三段式剪辑法：把素材从 3 小时压到 8 分钟</h3>
+            <p>先定情绪、再搭结构、最后补细节，完整演示一条纪录短片的剪辑取舍过程。</p>
+            <div class="jfy-tags"><span class="jfy-tag">#剪辑</span><span class="jfy-tag">#方法</span></div>
+            <div class="jfy-card-foot">
+              <span class="jfy-author"><span class="jfy-avatar" style="background:#2c4a58">剪</span>一页光年</span>
+              <span class="jfy-ops">
+                <button class="jfy-op" data-jfy-like>♡ <span>567</span></button>
+                <button class="jfy-op" data-jfy-save>☆</button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="jfy-card" data-jfy-cat="city">
+          <div class="jfy-cover">
+            <svg viewBox="0 0 640 360" role="img" aria-label="视频封面：夜色中的跨江大桥与车流光线">
+              <rect width="640" height="360" fill="#122a3a"/>
+              <g fill="#1f4152">
+                <rect x="0" y="240" width="640" height="120"/>
+                <rect x="80" y="180" width="20" height="80"/><rect x="300" y="150" width="20" height="110"/>
+                <rect x="520" y="170" width="20" height="90"/>
+              </g>
+              <g stroke="#6fb3a8" stroke-width="3" opacity=".7" fill="none">
+                <path d="M0 250 L120 180 L300 150 L480 186 L640 236"/>
+                <path d="M0 268 L120 200 L300 172 L480 206 L640 254"/>
+              </g>
+              <g stroke="#f3c969" stroke-width="2" opacity=".8">
+                <path d="M0 316 Q 200 300 340 312 T 640 306"/>
+              </g>
+            </svg>
+            <span class="jfy-cover-tag">城市探索</span>
+            <span class="jfy-cover-play"><span></span></span>
+            <span class="jfy-cover-dur">09:36</span>
+          </div>
+          <div class="jfy-card-body">
+            <h3>末班公交之上：一条线路的二十四个站</h3>
+            <p>从终点站坐到起点站，记录深夜城市里不同的睡姿、手机屏幕与窗外灯。</p>
+            <div class="jfy-tags"><span class="jfy-tag">#夜行</span><span class="jfy-tag">#公交</span></div>
+            <div class="jfy-card-foot">
+              <span class="jfy-author"><span class="jfy-avatar" style="background:#1f4152">末</span>末班车厢</span>
+              <span class="jfy-ops">
+                <button class="jfy-op" data-jfy-like>♡ <span>324</span></button>
+                <button class="jfy-op" data-jfy-save>☆</button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="jfy-card" data-jfy-cat="craft">
+          <div class="jfy-cover">
+            <svg viewBox="0 0 640 360" role="img" aria-label="视频封面：修复旧木椅的砂纸打磨特写">
+              <rect width="640" height="360" fill="#a98b63"/>
+              <g fill="#8a6c48">
+                <rect x="120" y="120" width="400" height="30" rx="8"/>
+                <rect x="140" y="150" width="26" height="150" rx="8"/>
+                <rect x="474" y="150" width="26" height="150" rx="8"/>
+              </g>
+              <g stroke="#e8d5b4" stroke-width="5" opacity=".8" fill="none" stroke-linecap="round">
+                <path d="M200 190 L280 210"/><path d="M300 196 L380 216"/><path d="M220 240 L300 258"/>
+              </g>
+              <rect x="256" y="196" width="120" height="40" rx="10" fill="#d9c3a0"/>
+            </svg>
+            <span class="jfy-cover-tag">手作日常</span>
+            <span class="jfy-cover-play"><span></span></span>
+            <span class="jfy-cover-dur">17:52</span>
+          </div>
+          <div class="jfy-card-body">
+            <h3>旧木椅修复：从拆榫到上蜡的完整记录</h3>
+            <p>一把菜市场捡来的木椅，经过加固、补漆与打蜡，重新回到书桌前。</p>
+            <div class="jfy-tags"><span class="jfy-tag">#修复</span><span class="jfy-tag">#木工</span></div>
+            <div class="jfy-card-foot">
+              <span class="jfy-author"><span class="jfy-avatar" style="background:#8a6c48">木</span>木作慢语</span>
+              <span class="jfy-ops">
+                <button class="jfy-op" data-jfy-like>♡ <span>298</span></button>
+                <button class="jfy-op" data-jfy-save>☆</button>
+              </span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者矩阵 -->
+  <section class="jfy-section" id="jfy-creator" aria-labelledby="jfy-creator-title">
+    <div class="jfy-container">
+      <div class="jfy-head">
+        <div>
+          <span class="jfy-head-kicker">Creators</span>
+          <h2 id="jfy-creator-title">创作者矩阵</h2>
+          <p>六位长期合作创作者，构成了集芳阁云搜最稳定的内容底盘。</p>
+        </div>
+        <button class="jfy-btn jfy-btn-ghost" data-jfy-modal="join">申请成为创作者</button>
+      </div>
+
+      <div class="jfy-creator-grid">
+        <article class="jfy-creator">
+          <span class="jfy-creator-ava" style="background:linear-gradient(140deg,#2f7a61,#1b4d3e)">南</span>
+          <div>
+            <h3>南巷观察</h3>
+            <p class="jfy-creator-field">城市探索 · 街巷记录</p>
+            <p>习惯在清晨六点出门，用固定镜头拍下街区的变化，作品以长镜头与自然收音见长。</p>
+            <div class="jfy-creator-nums"><span><b>86</b> 部作品</span><span><b>3.2 万</b> 关注</span></div>
+            <div class="jfy-creator-more"><button class="jfy-btn jfy-btn-ghost" data-jfy-creator="南巷观察">查看档案</button></div>
+          </div>
+        </article>
+
+        <article class="jfy-creator">
+          <span class="jfy-creator-ava" style="background:linear-gradient(140deg,#c8992e,#8a6a3c)">藤</span>
+          <div>
+            <h3>藤间手记</h3>
+            <p class="jfy-creator-field">手作日常 · 材料研究</p>
+            <p>专注藤、竹、草三类天然材料的编织技法，教程步骤拆得很细，适合零基础跟着做。</p>
+            <div class="jfy-creator-nums"><span><b>54</b> 部作品</span><span><b>2.1 万</b> 关注</span></div>
+            <div class="jfy-creator-more"><button class="jfy-btn jfy-btn-ghost" data-jfy-creator="藤间手记">查看档案</button></div>
+          </div>
+        </article>
+
+        <article class="jfy-creator">
+          <span class="jfy-creator-ava" style="background:linear-gradient(140deg,#6b4f7a,#3f2f4a)">阁</span>
+          <div>
+            <h3>阁中问答</h3>
+            <p class="jfy-creator-field">人物访谈 · 幕后故事</p>
+            <p>前纸媒记者，擅长把访谈做成对话现场，坚持保留受访者的停顿与口头禅。</p>
+            <div class="jfy-creator-nums"><span><b>39</b> 部作品</span><span><b>1.8 万</b> 关注</span></div>
+            <div class="jfy-creator-more"><button class="jfy-btn jfy-btn-ghost" data-jfy-creator="阁中问答">查看档案</button></div>
+          </div>
+        </article>
+
+        <article class="jfy-creator">
+          <span class="jfy-creator-ava" style="background:linear-gradient(140deg,#2c4a58,#1b2f3a)">剪</span>
+          <div>
+            <h3>一页光年</h3>
+            <p class="jfy-creator-field">教程干货 · 剪辑方法</p>
+            <p>把剪辑流程拆成可复用的步骤，强调「先想清楚再下手」，作品附带工程文件思路。</p>
+            <div class="jfy-creator-nums"><span><b>72</b> 部作品</span><span><b>4.6 万</b> 关注</span></div>
+            <div class="jfy-creator-more"><button class="jfy-btn jfy-btn-ghost" data-jfy-creator="一页光年">查看档案</button></div>
+          </div>
+        </article>
+
+        <article class="jfy-creator">
+          <span class="jfy-creator-ava" style="background:linear-gradient(140deg,#7fa3b8,#2b4a52)">山</span>
+          <div>
+            <h3>山行笔记</h3>
+            <p class="jfy-creator-field">户外活动 · 路线攻略</p>
+            <p>只走低海拔路线，主张「量力而行」，每条视频都给出来回时间与补给点。</p>
+            <div class="jfy-creator-nums"><span><b>47</b> 部作品</span><span><b>2.7 万</b> 关注</span></div>
+            <div class="jfy-creator-more"><button class="jfy-btn jfy-btn-ghost" data-jfy-creator="山行笔记">查看档案</button></div>
+          </div>
+        </article>
+
+        <article class="jfy-creator">
+          <span class="jfy-creator-ava" style="background:linear-gradient(140deg,#b4674c,#7a3f2c)">慢</span>
+          <div>
+            <h3>慢针线</h3>
+            <p class="jfy-creator-field">手作 DIY · 旧物改造</p>
+            <p>擅长把旧衣拆解重做，视频节奏很慢，但每一步都拍清楚，被用户称为「可跟着做的手艺片」。</p>
+            <div class="jfy-creator-nums"><span><b>63</b> 部作品</span><span><b>3.0 万</b> 关注</span></div>
+            <div class="jfy-creator-more"><button class="jfy-btn jfy-btn-ghost" data-jfy-creator="慢针线">查看档案</button></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 影像墙 -->
+  <section class="jfy-section jfy-section-alt" aria-labelledby="jfy-wall-title">
+    <div class="jfy-container">
+      <div class="jfy-head">
+        <div>
+          <span class="jfy-head-kicker">Gallery</span>
+          <h2 id="jfy-wall-title">用户影像墙</h2>
+          <p>来自社区投稿的静态切片，点击可查看对应作品信息。</p>
+        </div>
+        <button class="jfy-btn jfy-btn-primary" data-jfy-modal="join">上传我的作品</button>
+      </div>
+
+      <div class="jfy-wall">
+        <figure class="jfy-wall-item jfy-wall-big">
+          <svg viewBox="0 0 640 400" role="img" aria-label="影像墙大图：清晨薄雾中的湖面与木栈道">
+            <defs>
+              <linearGradient id="jfyW1" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#c3d6cd"/><stop offset="100%" stop-color="#6f9a8a"/>
+              </linearGradient>
+            </defs>
+            <rect width="640" height="400" fill="url(#jfyW1)"/>
+            <rect x="0" y="250" width="640" height="150" fill="#4f7a6d"/>
+            <g stroke="#3d6157" stroke-width="6">
+              <path d="M180 400 L180 290 L460 290 L460 400"/>
+              <path d="M180 330 L460 330"/><path d="M180 370 L460 370"/>
+            </g>
+            <g fill="#eaf1ea" opacity=".55">
+              <ellipse cx="150" cy="220" rx="160" ry="22"/><ellipse cx="470" cy="200" rx="150" ry="18"/>
+            </g>
+          </svg>
+          <figcaption>晨雾栈道 · 山行笔记</figcaption>
+        </figure>
+        <figure class="jfy-wall-item">
+          <svg viewBox="0 0 320 200" role="img" aria-label="影像墙小图：窗台上的多肉植物与玻璃瓶">
+            <rect width="320" height="200" fill="#dfd0b4"/>
+            <rect x="0" y="140" width="320" height="60" fill="#c2ab88"/>
+            <g fill="#6f9a7f">
+              <circle cx="110" cy="118" r="26"/><circle cx="86" cy="128" r="18"/><circle cx="134" cy="130" r="16"/>
+            </g>
+            <rect x="150" y="90" width="46" height="52" rx="8" fill="#a9c8c0"/>
+            <rect x="216" y="106" width="52" height="36" rx="6" fill="#e8d5b4"/>
+          </svg>
+          <figcaption>窗台一角 · 藤间手记</figcaption>
+        </figure>
+        <figure class="jfy-wall-item">
+          <svg viewBox="0 0 320 200" role="img" aria-label="影像墙小图：黄昏墙面上的自行车影子">
+            <rect width="320" height="200" fill="#e0a86c"/>
+            <rect x="0" y="140" width="320" height="60" fill="#b9803f"/>
+            <g stroke="#7a5127" stroke-width="5" fill="none" opacity=".8">
+              <circle cx="110" cy="146" r="22"/><circle cx="196" cy="146" r="22"/>
+              <path d="M110 146 L152 130 L196 146 M152 130 L166 146 M134 108 L166 146"/>
+            </g>
+          </svg>
+          <figcaption>影子上班 · 南巷观察</figcaption>
+        </figure>
+        <figure class="jfy-wall-item jfy-wall-wide">
+          <svg viewBox="0 0 640 240" role="img" aria-label="影像墙横图：夜市长街的暖色灯牌与人群剪影">
+            <rect width="640" height="240" fill="#2a2230"/>
+            <rect x="0" y="170" width="640" height="70" fill="#1a1520"/>
+            <g fill="#f3c969" opacity=".92">
+              <rect x="60" y="60" width="70" height="46" rx="6"/>
+              <rect x="170" y="80" width="54" height="34" rx="5"/>
+              <rect x="280" y="52" width="86" height="52" rx="6"/>
+              <rect x="420" y="76" width="60" height="38" rx="5"/>
+              <rect x="520" y="58" width="74" height="46" rx="6"/>
+            </g>
+            <g fill="#0d0a12" opacity=".85">
+              <rect x="80" y="176" width="18" height="46" rx="7"/><rect x="140" y="182" width="16" height="40" rx="7"/>
+              <rect x="240" y="176" width="18" height="46" rx="7"/><rect x="360" y="184" width="16" height="38" rx="7"/>
+              <rect x="470" y="176" width="18" height="46" rx="7"/><rect x="560" y="182" width="16" height="40" rx="7"/>
+            </g>
+          </svg>
+          <figcaption>夜市灯牌 · 末班车厢</figcaption>
+        </figure>
+        <figure class="jfy-wall-item jfy-wall-lg">
+          <svg viewBox="0 0 320 400" role="img" aria-label="影像墙竖图：陶罐与工具在木桌上的陈列">
+            <rect width="320" height="400" fill="#b89b74"/>
+            <rect x="0" y="280" width="320" height="120" fill="#8d7350"/>
+            <path d="M120 280 Q 106 200 138 160 L182 160 Q 214 200 200 280 Z" fill="#e2c9a6"/>
+            <g stroke="#8d6b53" stroke-width="5" stroke-linecap="round">
+              <path d="M210 300 L280 250"/><path d="M226 318 L290 274"/>
+            </g>
+            <circle cx="96" cy="318" r="24" fill="#c99a62"/>
+          </svg>
+          <figcaption>拉坯之后 · 陶野手记</figcaption>
+        </figure>
+        <figure class="jfy-wall-item">
+          <svg viewBox="0 0 320 200" role="img" aria-label="影像墙小图：一杯手冲咖啡与冒着热气的壶">
+            <rect width="320" height="200" fill="#3c3530"/>
+            <rect x="0" y="150" width="320" height="50" fill="#2b2522"/>
+            <rect x="96" y="112" width="60" height="46" rx="8" fill="#efe6d5"/>
+            <path d="M156 122 q 22 8 0 26" stroke="#efe6d5" stroke-width="5" fill="none"/>
+            <g stroke="#c9b89c" stroke-width="3" opacity=".7" fill="none">
+              <path d="M124 100 q 8 -14 0 -26"/><path d="M140 100 q 8 -14 0 -26"/>
+            </g>
+            <ellipse cx="230" cy="146" rx="40" ry="14" fill="#6f5b4a"/>
+          </svg>
+          <figcaption>手冲片刻 · 慢针线</figcaption>
+        </figure>
+        <figure class="jfy-wall-item">
+          <svg viewBox="0 0 320 200" role="img" aria-label="影像墙小图：旧书页与压平的干花">
+            <rect width="320" height="200" fill="#ece1c9"/>
+            <rect x="40" y="40" width="240" height="130" rx="6" fill="#fbf5e6"/>
+            <g stroke="#cfc2a6" stroke-width="3">
+              <path d="M66 80 h188"/><path d="M66 100 h188"/><path d="M66 120 h140"/>
+            </g>
+            <g fill="#b08a5c">
+              <circle cx="206" cy="140" r="10"/><circle cx="226" cy="130" r="8"/>
+              <path d="M206 150 q 10 16 26 10" stroke="#8d6b53" stroke-width="3" fill="none"/>
+            </g>
+          </svg>
+          <figcaption>书页干花 · 一页光年</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户评价 -->
+  <section class="jfy-section" aria-labelledby="jfy-review-title">
+    <div class="jfy-container">
+      <div class="jfy-head">
+        <div>
+          <span class="jfy-head-kicker">Voices</span>
+          <h2 id="jfy-review-title">用户怎么说</h2>
+          <p>来自社区、合作企业与创作者的六条真实反馈。</p>
+        </div>
+      </div>
+
+      <div class="jfy-review-grid">
+        <article class="jfy-review">
+          <div class="jfy-stars">★★★★★</div>
+          <p>云搜的标签体系是真的好用。我搜「手作 起针」直接找到那一集，不用在一堆热门里翻。作为一个爱做手工的人，这比推荐流靠谱太多了。</p>
+          <div class="jfy-review-user">
+            <span class="jfy-avatar" style="background:#8a6a3c">织</span>
+            <div><strong>织间小满</strong><small>社区用户 · 使用 2 年</small></div>
+          </div>
+        </article>
+
+        <article class="jfy-review">
+          <div class="jfy-stars">★★★★★</div>
+          <p>我们把公司三年的产品视频放进集芳阁云搜的企业影像库，市场部找素材从半天缩到三分钟。索引结构做得很扎实，是少见的认真做底层的内容平台。</p>
+          <div class="jfy-review-user">
+            <span class="jfy-avatar" style="background:#2c4a58">企</span>
+            <div><strong>某制造企业品牌负责人</strong><small>企业合作 · 2026 年</small></div>
+          </div>
+        </article>
+
+        <article class="jfy-review">
+          <div class="jfy-stars">★★★★☆</div>
+          <p>第一次投稿就被人工复核了，收到一封写了具体修改建议的邮件，指出我第 4 分钟的收音有问题。虽然没过，但那条建议我记到现在。</p>
+          <div class="jfy-review-user">
+            <span class="jfy-avatar" style="background:#2f7a61">青</span>
+            <div><strong>青石巷口</strong><small>投稿作者 · 第 3 次投稿</small></div>
+          </div>
+        </article>
+
+        <article class="jfy-review">
+          <div class="jfy-stars">★★★★★</div>
+          <p>专题企划的编排很有耐心，不是把热门堆在一起，而是有一条清楚的观看路径。我跟着「云隙索引」看完了六集，像读完一本短篇集。</p>
+          <div class="jfy-review-user">
+            <span class="jfy-avatar" style="background:#b4674c">林</span>
+            <div><strong>林间慢读</strong><small>社区用户 · 使用 1 年半</small></div>
+          </div>
+        </article>
+
+        <article class="jfy-review">
+          <div class="jfy-stars">★★★★☆</div>
+          <p>作为签约创作者，最实用的其实是拍摄协调和高清转码。以前自己折腾压缩，现在专注拍就行。希望以后能多一些线下创作营。</p>
+          <div class="jfy-review-user">
+            <span class="jfy-avatar" style="background:#7fa3b8">山</span>
+            <div><strong>山行笔记</strong><small>签约创作者 · 户外方向</small></div>
+          </div>
+        </article>
+
+        <article class="jfy-review">
+          <div class="jfy-stars">★★★★★</div>
+          <p>页面加载很快，视频画质也稳定。客服回复过我一次下载权限的问题，当天就解决了。这种细节让我愿意把它当成长期使用的内容平台。</p>
+          <div class="jfy-review-user">
+            <span class="jfy-avatar" style="background:#6b4f7a">陆</span>
+            <div><strong>陆屿</strong><small>社区用户 · 使用 3 年</small></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 企业动态 -->
+  <section class="jfy-section jfy-section-alt" id="jfy-log" aria-labelledby="jfy-log-title">
+    <div class="jfy-container">
+      <div class="jfy-head">
+        <div>
+          <span class="jfy-head-kicker">Newsroom</span>
+          <h2 id="jfy-log-title">企业动态</h2>
+          <p>来自集芳阁云搜官方发布的内容更新、活动与平台说明。</p>
+        </div>
+        <button class="jfy-btn jfy-btn-ghost" data-jfy-modal="about">品牌与合作咨询</button>
+      </div>
+
+      <div class="jfy-log">
+        <article class="jfy-log-item">
+          <time datetime="2026-11-15">2026-11-15</time>
+          <h4>云搜索引引擎完成秋季升级</h4>
+          <p>本次升级优化了语义标签的合并策略，相似影像推荐命中率提升 27%，同时完成全站高清转码，移动端首屏加载更快。相关说明已同步在帮助中心。</p>
+        </article>
+        <article class="jfy-log-item">
+          <time datetime="2026-11-08">2026-11-08</time>
+          <h4>新人创作者扶持计划第 4 期开启报名</h4>
+          <p>面向首次投稿的创作者，提供选题辅导、拍摄协调与作品评审反馈。报名截至 11 月 30 日，可在投稿入口提交简介与作品链接。</p>
+        </article>
+        <article class="jfy-log-item">
+          <time datetime="2026-10-29">2026-10-29</time>
+          <h4>「城市影像挑战赛·集芳阁站」启动投票</h4>
+          <p>本期主题为「巷口的四季」，共收到 214 部投稿，其中 36 部进入投票环节。投票结果将于 12 月由评审团与社区共同公布。</p>
+        </article>
+        <article class="jfy-log-item">
+          <time datetime="2026-10-12">2026-10-12</time>
+          <h4>企业影像库上线权限分级与下载记录</h4>
+          <p>面向企业客户推出权限分级与高清下载记录功能，支持按项目、部门与标签管理素材，方便跨团队复用与合规追溯。</p>
+        </article>
+        <article class="jfy-log-item">
+          <time datetime="2026-09-24">2026-09-24</time>
+          <h4>年度内容治理说明发布</h4>
+          <p>集芳阁云搜发布本年度内容治理说明，涵盖内容安全、创作者申诉、未成年人保护与商业内容标注规则，全文可在帮助中心查阅。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="jfy-section" id="jfy-faq" aria-labelledby="jfy-faq-title">
+    <div class="jfy-container">
+      <div class="jfy-head" style="justify-content:center;text-align:center;flex-direction:column;align-items:center">
+        <span class="jfy-head-kicker">Help Center</span>
+        <h2 id="jfy-faq-title">常见问题</h2>
+        <p>关于云搜、投稿、合作与账号的高频疑问。</p>
+      </div>
+
+      <div class="jfy-faq">
+        <details open>
+          <summary>集芳阁云搜是什么？它和普通视频平台有什么不同？</summary>
+          <div class="jfy-faq-a">集芳阁云搜是一个以「云端索引 + 原创影像」为核心的视频品牌社区。不同之处在于我们更强调可检索的内容结构：每条作品都有完整的语义标签、时长与创作手记，用户可以通过关键词组合精确定位内容，而不是依赖单一推荐流。</div>
+        </details>
+        <details>
+          <summary>如何通过云搜找到想看的内容？</summary>
+          <div class="jfy-faq-a">在页面顶部搜索框输入关键词，例如题材加细节的组合词，系统会优先返回同时命中多个语义标签的原创作品。你也可以通过热门视频流的主题筛选快速缩小范围，或从专题企划进入一条完整的观看路径。</div>
+        </details>
+        <details>
+          <summary>投稿的作品需要满足哪些要求？</summary>
+          <div class="jfy-faq-a">建议使用 16:9 画幅、分辨率不低于 1080p 的文件，并附上作品说明、拍摄地与创作手记。内容需符合平台的内容安全规则，商业内容请主动标注来源。所有投稿都会经过至少一轮人工复核。</div>
+        </details>
+        <details>
+          <summary>投稿后多久会收到评审反馈？</summary>
+          <div class="jfy-faq-a">通常在 7 个工作日内。若作品进入签约或联合出品评估，我们会另行联系并给出更详细的沟通。未通过的投稿会收到一封包含具体建议的反馈邮件。</div>
+        </details>
+        <details>
+          <summary>企业客户可以如何使用集芳阁云搜？</summary>
+          <div class="jfy-faq-a">企业可将产品视频、活动记录与人物访谈统一入库，使用云搜标签体系实现跨项目复用，并配套权限管理与高清下载通道。如需评估，可通过联系入口提交需求说明，我们会安排一次内容资产盘点沟通。</div>
+        </details>
+        <details>
+          <summary>平台如何保护创作者的权益？</summary>
+          <div class="jfy-faq-a">创作者保留作品著作权，平台仅在授权范围内进行展示与推荐。对于商业合作内容，我们会明确标注「官方发布」或「合作企划」，并提供申诉通道。任何搬运、洗稿行为都会被核查处理。</div>
+        </details>
+        <details>
+          <summary>如何参与影像挑战赛与年度投票评选？</summary>
+          <div class="jfy-faq-a">每期挑战赛会在企业动态与公告条同步开启报名，按当期主题提交作品即可参与。年度投票评选面向社区用户开放，投票结果由评审团与社区共同决定，具体规则会在活动页面公布。</div>
+        </details>
+        <details>
+          <summary>账号或内容遇到问题如何反馈？</summary>
+          <div class="jfy-faq-a">可通过页面上的内容反馈入口提交问题，注明具体作品与现象，我们会在 48 小时内响应。涉及账号安全的紧急问题，请在反馈中标注「紧急」，以便优先处理。</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系 / 投稿 -->
+  <section class="jfy-section jfy-section-dark" id="jfy-join" aria-labelledby="jfy-join-title">
+    <div class="jfy-container">
+      <div class="jfy-cta">
+        <div>
+          <h2 id="jfy-join-title">把你的作品，放进这座阁楼</h2>
+          <p>
+            无论你拍城市、拍手艺还是拍人，集芳阁云搜都愿意为认真完成的作品留一个位置。
+            投稿、报名与商务合作均通过同一入口提交，我们会在 7 个工作日内回应。
+          </p>
+          <div class="jfy-meta" style="margin-top:16px;color:#9dbaad">
+            <span>官方邮箱：hello@jifangge.example</span>
+            <span>工作时间：周一至周五 10:00–18:30</span>
+          </div>
+        </div>
+        <div class="jfy-cta-actions">
+          <button class="jfy-btn jfy-btn-gold" data-jfy-modal="join">提交投稿申请</button>
+          <button class="jfy-btn jfy-btn-primary" data-jfy-modal="coop">企业合作咨询</button>
+          <button class="jfy-btn jfy-btn-ghost" style="border-color:#f3c969;color:#f3c969" data-jfy-modal="share">分享官方网站</button>
+          <p class="jfy-cta-note">集芳阁云搜官方网站 · 持续运营中</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="jfy-footer">
+  <div class="jfy-container">
+    <div class="jfy-footer-grid">
+      <div>
+        <div class="jfy-footer-brand">
+          <span class="jfy-brand-mark">集</span>
+          <span>
+            <strong>集芳阁云搜</strong>
+            <em>JIFANGGE CLOUD</em>
+          </span>
+        </div>
+        <p>
+          集芳阁云搜官方网站，是一个以云端索引与原创影像为核心的视频品牌平台。
+          我们深耕垂直领域内容生态，为创作者与企业提供值得信赖的高品质内容服务。
+        </p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#jfy-focus">焦点内容</a></li>
+          <li><a href="#jfy-special">专题企划</a></li>
+          <li><a href="#jfy-flow">热门视频</a></li>
+          <li><a href="#jfy-creator">创作者矩阵</a></li>
+          <li><a href="#jfy-top">影像墙</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>帮助与规则</h4>
+        <ul>
+          <li><a href="#jfy-faq">常见问题</a></li>
+          <li><a href="#jfy-log">企业动态</a></li>
+          <li><a href="#jfy-join">投稿入口</a></li>
+          <li><a href="#jfy-join">商务合作</a></li>
+          <li><a href="#jfy-faq">内容治理说明</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>官方信息</h4>
+        <p>
+          运营主体：集芳阁云搜内容科技（示例）<br>
+          官方邮箱：hello@jifangge.example<br>
+          合作通道：business@jifangge.example<br>
+          地址：城南文创园 3 号楼 2 层
+        </p>
+      </div>
+    </div>
+    <div class="jfy-footer-bottom">
+      <span>© 2017–2026 集芳阁云搜 版权所有 · 官方网站 · 持续运营中</span>
+      <span>内容备案号：示例备 2026008 号 · 品牌与内容均受版权保护</span>
+    </div>
+  </div>
+</footer>
+
+<button class="jfy-backtop" id="jfyBackTop" aria-label="回到顶部">↑</button>
+<div class="jfy-toast" id="jfyToast" role="status" aria-live="polite"></div>
+
+<!-- 弹窗：联系/投稿 -->
+<div class="jfy-modal-mask" id="jfyModalJoin" aria-hidden="true">
+  <div class="jfy-modal" role="dialog" aria-modal="true" aria-labelledby="jfyJoinTitle">
+    <button class="jfy-modal-close" data-jfy-close aria-label="关闭">✕</button>
+    <h3 id="jfyJoinTitle">投稿与报名</h3>
+    <p>填写基本信息，我们会在 7 个工作日内通过邮件回复评审意见。</p>
+    <label for="jfyJoinName">称呼</label>
+    <input id="jfyJoinName" type="text" placeholder="如何称呼你">
+    <label for="jfyJoinMail">联系邮箱</label>
+    <input id="jfyJoinMail" type="email" placeholder="用于接收评审反馈">
+    <label for="jfyJoinMsg">作品说明</label>
+    <textarea id="jfyJoinMsg" placeholder="题材、时长、拍摄地与想表达的内容"></textarea>
+    <button class="jfy-btn jfy-btn-primary" style="width:100%" data-jfy-submit="join">提交申请</button>
+  </div>
+</div>
+
+<!-- 弹窗：企业合作 -->
+<div class="jfy-modal-mask" id="jfyModalCoop" aria-hidden="true">
+  <div class="jfy-modal" role="dialog" aria-modal="true" aria-labelledby="jfyCoopTitle">
+    <button class="jfy-modal-close" data-jfy-close aria-label="关闭">✕</button>
+    <h3 id="jfyCoopTitle">企业合作咨询</h3>
+    <p>企业影像库、联合出品、专题定制与品牌内容服务，均可从此入口发起沟通。</p>
+    <label for="jfyCoopOrg">企业名称</label>
+    <input id="jfyCoopOrg" type="text" placeholder="公司或团队名称">
+    <label for="jfyCoopNeed">合作需求</label>
+    <textarea id="jfyCoopNeed" placeholder="例如：产品视频入库、年度专题共创"></textarea>
+    <button class="jfy-btn jfy-btn-primary" style="width:100%" data-jfy-submit="coop">发送需求</button>
+  </div>
+</div>
+
+<!-- 弹窗：分享 -->
+<div class="jfy-modal-mask" id="jfyModalShare" aria-hidden="true">
+  <div class="jfy-modal" role="dialog" aria-modal="true" aria-labelledby="jfyShareTitle">
+    <button class="jfy-modal-close" data-jfy-close aria-label="关闭">✕</button>
+    <h3 id="jfyShareTitle">分享集芳阁云搜</h3>
+    <p>把这处可检索的内容花阁，分享给同样认真看片的人。</p>
+    <div class="jfy-share-row">
+      <button data-jfy-share="微信">微信</button>
+      <button data-jfy-share="微博">微博</button>
+      <button data-jfy-share="QQ">QQ</button>
+    </div>
+    <button class="jfy-btn jfy-btn-ghost" style="width:100%" data-jfy-copy>复制页面链接</button>
+  </div>
+</div>
+
+<!-- 弹窗：反馈 -->
+<div class="jfy-modal-mask" id="jfyModalFeedback" aria-hidden="true">
+  <div class="jfy-modal" role="dialog" aria-modal="true" aria-labelledby="jfyFeedbackTitle">
+    <button class="jfy-modal-close" data-jfy-close aria-label="关闭">✕</button>
+    <h3 id="jfyFeedbackTitle">内容反馈</h3>
+    <p>发现问题内容或有改进建议，请告诉我们，我们会在 48 小时内响应。</p>
+    <label for="jfyFbType">反馈类型</label>
+    <input id="jfyFbType" type="text" placeholder="例如：标签错误、描述不符、版权问题">
+    <label for="jfyFbMsg">具体说明</label>
+    <textarea id="jfyFbMsg" placeholder="请注明作品名称与问题现象"></textarea>
+    <button class="jfy-btn jfy-btn-primary" style="width:100%" data-jfy-submit="feedback">提交反馈</button>
+  </div>
+</div>
+
+<!-- 弹窗：品牌故事 -->
+<div class="jfy-modal-mask" id="jfyModalAbout" aria-hidden="true">
+  <div class="jfy-modal" role="dialog" aria-modal="true" aria-labelledby="jfyAboutTitle">
+    <button class="jfy-modal-close" data-jfy-close aria-label="关闭">✕</button>
+    <h3 id="jfyAboutTitle">集芳阁云搜品牌故事</h3>
+    <p>2017 年，三位分别在纪录片、剪辑与前端开发领域的合作者，把各自收藏的短片整理成一张共享表格，取名「集芳阁」。随着条目增长到两万条，这张表被做成了一套云端索引系统，也就是今天的云搜。</p>
+    <p>九年过去，集芳阁云搜始终相信：内容的价值来自被准确找到，而不是被反复推送。我们保持人工复核、坚持来源标注、维护创作者时间线，希望成为一个有耐心的视频品牌平台。</p>
+    <p>如需进一步了解企业背景、内容治理或合作方式，可通过官方邮箱 hello@jifangge.example 联系我们。</p>
+  </div>
+</div>
+
+<!-- 弹窗：创作者档案 -->
+<div class="jfy-modal-mask" id="jfyModalCreator" aria-hidden="true">
+  <div class="jfy-modal" role="dialog" aria-modal="true" aria-labelledby="jfyCreatorTitle">
+    <button class="jfy-modal-close" data-jfy-close aria-label="关闭">✕</button>
+    <h3 id="jfyCreatorTitle">创作者档案</h3>
+    <p id="jfyCreatorInfo">正在读取创作者信息…</p>
+    <button class="jfy-btn jfy-btn-ghost" style="width:100%" data-jfy-close>关闭</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- 工具 ---------- */
+  var toastTimer = null;
+  function toast(msg){
+    var t = document.getElementById('jfyToast');
+    t.textContent = msg;
+    t.classList.add('jfy-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ t.classList.remove('jfy-show'); }, 2200);
+  }
+
+  var activeModal = null;
+  function openModal(id){
+    closeModal();
+    var m = document.getElementById(id);
+    if(!m) return;
+    m.classList.add('jfy-show');
+    m.setAttribute('aria-hidden','false');
+    activeModal = m;
+    var focusable = m.querySelector('input, textarea, button');
+    if(focusable) setTimeout(function(){ focusable.focus(); }, 60);
+  }
+  function closeModal(){
+    if(!activeModal) return;
+    activeModal.classList.remove('jfy-show');
+    activeModal.setAttribute('aria-hidden','true');
+    activeModal = null;
+  }
+  document.querySelectorAll('[data-jfy-modal]').forEach(function(el){
+    el.addEventListener('click', function(){
+      var map = {share:'jfyModalShare', join:'jfyModalJoin', coop:'jfyModalCoop', feedback:'jfyModalFeedback', about:'jfyModalAbout'};
+      openModal(map[el.getAttribute('data-jfy-modal')]);
+    });
+  });
+  document.addEventListener('click', function(e){
+    if(e.target.hasAttribute('data-jfy-close') || e.target.classList.contains('jfy-modal-mask')){
+      closeModal();
+    }
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') closeModal();
+  });
+
+  /* ---------- 移动端导航 ---------- */
+  var burger = document.getElementById('jfyBurger');
+  var menu = document.getElementById('jfyMenu');
+  burger.addEventListener('click', function(){
+    var open = menu.classList.toggle('jfy-open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burger.textContent = open ? '✕' : '☰';
+  });
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      menu.classList.remove('jfy-open');
+      burger.textContent = '☰';
+      burger.setAttribute('aria-expanded','false');
+      menu.querySelectorAll('a').forEach(function(x){ x.classList.remove('jfy-active'); });
+      a.classList.add('jfy-active');
+    });
+  });
+
+  /* ---------- 搜索反馈 ---------- */
+  var searchInput = document.getElementById('jfySearchInput');
+  var searchBtn = document.getElementById('jfySearchBtn');
+  var searchTip = document.getElementById('jfySearchTip');
+  var searchData = [
+    {k:'巷口', n:'《巷口的四季：一辆旧自行车与十七年修车摊》', c:'城市探索'},
+    {k:'藤编', n:'《藤编入门：一只篮子的三条起底路径》', c:'手作日常'},
+    {k:'剪辑', n:'《三段式剪辑法：把素材从 3 小时压到 8 分钟》', c:'教程干货'},
+    {k:'访谈', n:'《拍了十年，他终于承认自己怕镜头》', c:'人物访谈'},
+    {k:'夜行', n:'《末班公交之上：一条线路的二十四个站》', c:'城市探索'},
+    {k:'云隙', n:'专题「云隙索引 · 秋末的城市切片」', c:'专题企划'},
+    {k:'南巷观察', n:'创作者「南巷观察」档案与 86 部作品', c:'创作者'},
+    {k:'木椅', n:'《旧木椅修复：从拆榫到上蜡的完整记录》', c:'手作日常'}
+  ];
+  function doSearch(){
+    var q = (searchInput.value || '').trim();
+    if(!q){
+      searchTip.innerHTML = '请输入关键词，例如 <b>巷口</b>、<b>藤编</b>、<b>剪辑</b>';
+      searchTip.classList.add('jfy-show');
+      return;
+    }
+    var hit = searchData.filter(function(d){
+      return d.k.indexOf(q) > -1 || q.indexOf(d.k) > -1;
+    });
+    if(hit.length){
+      searchTip.innerHTML = '云搜找到 ' + hit.length + ' 条相关结果，例如：<b>' + hit[0].n + '</b>（' + hit[0].c + '）';
+    }else{
+      searchTip.innerHTML = '暂无「<b>' + q.replace(/[<>&]/g,'') + '</b>」的精确索引，建议尝试题材与细节组合，如「手作 + 起针」。';
+    }
+    searchTip.classList.add('jfy-show');
+  }
+  searchBtn.addEventListener('click', doSearch);
+  searchInput.addEventListener('keydown', function(e){ if(e.key === 'Enter'){ e.preventDefault(); doSearch(); } });
+  searchInput.addEventListener('input', function(){
+    if(!searchInput.value.trim()) searchTip.classList.remove('jfy-show');
+    else doSearch();
+  });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.jfy-search')) searchTip.classList.remove('jfy-show');
+  });
+
+  /* ---------- 点赞 / 收藏 ---------- */
+  document.querySelectorAll('[data-jfy-like]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var span = btn.querySelector('span');
+      var num = parseInt(span.textContent, 10) || 0;
+      var on = btn.classList.toggle('jfy-liked');
+      span.textContent = on ? (num + 1) : Math.max(num - 1, 0);
+      btn.firstChild.textContent = on ? '♥ ' : '♡ ';
+      toast(on ? '已标记喜欢' : '已取消喜欢');
+    });
+  });
+  document.querySelectorAll('[data-jfy-save]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var on = btn.classList.toggle('jfy-saved');
+      btn.textContent = on ? '★ 已收藏' : '☆';
+      toast(on ? '已加入收藏' : '已取消收藏');
+    });
+  });
+
+  /* ---------- 标签筛选 ---------- */
+  var chips = document.querySelectorAll('[data-jfy-filter]');
+  var cards = document.querySelectorAll('#jfyFlowGrid .jfy-card');
+  chips.forEach(function(chip){
+    chip.addEventListener('click', function(){
+      chips.forEach(function(c){ c.classList.remove('jfy-chip-on'); });
+      chip.classList.add('jfy-chip-on');
+      var cat = chip.getAttribute('data-jfy-filter');
+      var shown = 0;
+      cards.forEach(function(card){
+        var ok = (cat === 'all') || (card.getAttribute('data-jfy-cat') === cat);
+        card.classList.toggle('jfy-hide', !ok);
+        if(ok) shown++;
+      });
+      toast(cat === 'all' ? '已显示全部 ' + shown + ' 部作品' : '已筛选 ' + shown + ' 部作品');
+    });
+  });
+
+  /* ---------- 创作者档案 ---------- */
+  var creatorData = {
+    '南巷观察': {field:'城市探索 · 街巷记录', desc:'习惯在清晨六点出门，用固定镜头拍下街区的变化。共 86 部作品，代表作《巷口的四季》获本季主推。平台签约创作者，长期参与城市影像企划。'},
+    '藤间手记': {field:'手作日常 · 材料研究', desc:'专注藤、竹、草三类天然材料的编织技法，共 54 部作品。教程步骤拆解细致，被用户称为「可以跟着做的教材」，多次参与手作专题共创。'},
+    '阁中问答': {field:'人物访谈 · 幕后故事', desc:'前纸媒记者，擅长把访谈做成对话现场，共 39 部作品。坚持保留受访者的停顿与口头禅，主持的专题「在阁楼里说话的人」已完结 8 集。'},
+    '一页光年': {field:'教程干货 · 剪辑方法', desc:'把剪辑流程拆成可复用步骤，共 72 部作品。强调「先想清楚再下手」，单条剪辑教程最高热度 12 万，是平台教程类内容的代表创作者。'},
+    '山行笔记': {field:'户外活动 · 路线攻略', desc:'只走低海拔路线，主张量力而行，共 47 部作品。每条视频都给出来回时间、补给点与撤离方案，参与平台年度户外专题策划。'},
+    '慢针线': {field:'手作 DIY · 旧物改造', desc:'擅长把旧衣拆解重做，共 63 部作品。节奏很慢但每步都清楚，作品常被用于平台新手引导，也是「手作的第十二道工序」专题共创者。'}
+  };
+  document.querySelectorAll('[data-jfy-creator]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var name = btn.getAttribute('data-jfy-creator');
+      var info = creatorData[name] || {field:'创作者', desc:'暂无更多档案信息。'};
+      document.getElementById('jfyCreatorTitle').textContent = name;
+      document.getElementById('jfyCreatorInfo').innerHTML = '<strong>擅长领域：</strong>' + info.field + '<br><br>' + info.desc;
+      openModal('jfyModalCreator');
+    });
+  });
+
+  /* ---------- 表单提交 ---------- */
+  document.querySelectorAll('[data-jfy-submit]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var type = btn.getAttribute('data-jfy-submit');
+      var msg = {join:'投稿申请已提交，请留意邮箱反馈', coop:'合作需求已发送，我们会尽快联系', feedback:'反馈已收到，感谢你的帮助'};
+      closeModal();
+      toast(msg[type] || '已提交');
+    });
+  });
+
+  /* ---------- 分享 / 复制 ---------- */
+  document.querySelectorAll('[data-jfy-share]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      toast('已唤起' + btn.getAttribute('data-jfy-share') + '分享（演示）');
+    });
+  });
+  document.querySelectorAll('[data-jfy-copy]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var url = 'https://jifangge.example/';
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(url).then(function(){ toast('链接已复制'); }, function(){ toast('复制失败，请手动选择链接'); });
+      }else{
+        toast('链接已就绪：' + url);
+      }
+    });
+  });
+
+  /* ---------- 回到顶部 ---------- */
+  var backTop = document.getElementById('jfyBackTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 520) backTop.classList.add('jfy-show');
+    else backTop.classList.remove('jfy-show');
+  }, {passive:true});
+  backTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* ---------- 键盘可达：卡片内按钮聚焦提示 ---------- */
+  document.querySelectorAll('.jfy-card, .jfy-mini, .jfy-special').forEach(function(el){
+    el.setAttribute('tabindex','0');
+    el.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ el.classList.toggle('jfy-hover-lock'); }
+    });
+  });
+})();
+</script>
+</body>
+                                                                                                                       </html>
